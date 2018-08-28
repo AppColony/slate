@@ -10,8 +10,8 @@ Cache-Control: no-cache
 
 {
   "grant_type"  : "password",
-  "username"    : "admin@appcolony.ca",
-  "password"    : "appcolony"
+  "username"    : "company_admin@company.com",
+  "password"    : "PassWord1243!"
 }
 ```
 
@@ -20,7 +20,25 @@ curl --request POST \
   --url https://id.makeshift.ca/oauth/token \
   --header 'Cache-Control: no-cache' \
   --header 'Content-Type: application/json' \
-  --data '{ "grant_type": "password", "username": "admin@appcolony.ca", "password": "appcolony" }'
+  --data '{ "grant_type": "password", "username": "company_admin@company.com", "password": "PassWord1234!" }'
+```
+
+> Response example:
+
+```json
+{
+    "access_token": "c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b",
+    "token_type": "bearer",
+    "created_at": 1535435882,
+    "user": {
+        "id": 1,
+        "name": "Primary API User",
+        "role": "company_admin",
+        "email": "company_admin@company.com",
+        "employee_id": "12345",
+        "company_id": 270
+    }
+}
 ```
 
 > To use your token in API requests:
@@ -37,6 +55,7 @@ curl -X GET \
   -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b'
 ```
 
+
 A MakeShift API token can be retrieved for any company admin using a username/password.
 
 <aside class="notice">
@@ -45,4 +64,4 @@ A MakeShift API token can be retrieved for any company admin using a username/pa
 
 Use the returned token in API requests using an HTTP `Authorization` header, like so:
 
-`Authorization: Bearer defaaddbb673c8afeef85666f07aa4a11f3e0a2f487bf9c714ab00ba2b11c614`
+`Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b`
