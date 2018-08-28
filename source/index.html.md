@@ -62,7 +62,7 @@ Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c
 
 ```shell
 curl -X GET \
-  'http://localhost:3000/api/public/v1/departments/548/shifts?from=2018-01-01&to=2018-08-30' \
+  'https://app.makeshift.ca/api/public/v1/departments/548/shifts?from=2018-01-01&to=2018-08-30' \
   -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b'
 ```
 
