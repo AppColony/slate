@@ -2,10 +2,8 @@
 title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
+  - http
   - shell
-  - ruby
-  - python
-  - javascript
 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
@@ -23,100 +21,99 @@ Welcome to the MakeShift API!
 
 # Authentication
 
-> To authorize, use this code:
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-```
+> To authorize using a username and password, use this code:
 
 ```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+curl --request POST \
+  --url https://app.makeshift.ca/oauth/token \
+  --header 'Cache-Control: no-cache' \
+  --header 'Content-Type: application/json' \
+  --data '{ "grant_type": "password", "username": "admin@appcolony.ca", "password": "appcolony" }'
 ```
 
-```javascript
-const kittn = require('kittn');
+```http
+POST /oauth/token HTTP/1.1
+Host: app.makeshift.ca
+Content-Type: application/json
+Cache-Control: no-cache
 
-let api = kittn.authorize('meowmeowmeow');
+{
+  "grant_type"  : "password",
+  "username"    : "admin@appcolony.ca",
+  "password"    : "appcolony"
+}
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+> Make sure to replace your username and password information.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+A MakeShift API token can be retrieved for any company admin using a username/password.
 
 Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
-`Authorization: meowmeowmeow`
+`Authorization: Bearer defaaddbb673c8afeef85666f07aa4a11f3e0a2f487bf9c714ab00ba2b11c614`
 
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
+# Department/Shifts
 
-# Kittens
+## Get all shifts for a department
 
-## Get All Kittens
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
+```http
+GET /api/public/v1/departments/548/shifts?from=2018-01-01&to=2018-08-30 HTTP/1.1
+Host: app.makehshift.ca
+Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b
 ```
 
 ```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
+curl -X GET \
+  'http://localhost:3000/api/public/v1/departments/548/shifts?from=2018-01-01&to=2018-08-30' \
+  -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b'
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
+{
+  "data": [
+    {
+      "id": "135000",
+      "type": "shift",
+      "attributes": {
+        "starts_at": "2018-07-27 07:00:00 -0700",
+        "ends_at": "2018-07-27 13:00:00 -0700"
+      },
+      "relationships": {
+        "user": {
+          "data": {
+            "id": "7422",
+            "type": "user"
+          }
+        }
+      }
+    },
+    {
+      "id": "135001",
+      "type": "shift",
+      "attributes": {
+        "starts_at": "2018-07-28 03:00:00 -0700",
+        "ends_at": "2018-07-28 11:00:00 -0700"
+      },
+      "relationships": {
+        "user": {
+          "data": {
+            "id": "7422",
+            "type": "user"
+          }
+        }
+      }
+    }
+  ]
+}
 ```
 
-This endpoint retrieves all kittens.
+This endpoint retrieves all shifts in a department, filtered by various optional parameters.
 
 ### HTTP Request
 
-`GET http://example.com/api/kittens`
+`GET /api/public/v1/departments/:id/shifts`
 
 ### Query Parameters
 
