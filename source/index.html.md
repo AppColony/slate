@@ -11,7 +11,7 @@ toc_footers:
 
 includes:
   - api/authentication
-  - api/v1/department_shifts
+  - api/v1/users
   - errors
 
 search: true
