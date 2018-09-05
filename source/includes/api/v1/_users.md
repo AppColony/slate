@@ -30,9 +30,42 @@ curl -X GET \
 }
 ```
 
+> Select only certain fields 
+
+```http
+GET /api/public/v1/users/7442?fields[user]=first_name,email HTTP/1.1
+Host: app.makehshift.ca
+Authorization: Bearer 354c1536272216645a6a9f60670f69d302228f6277de100221799f4508f1db95
+```
+
+```shell
+curl -X GET \
+  'https://app.makeshift.ca/api/public/v1/users/7442?fields[user]=first_name,email' \
+  -H 'Authorization: Bearer 354c1536272216645a6a9f60670f69d302228f6277de100221799f4508f1db95' \
+```
+
+```json
+{
+  "data": {
+    "id": "7442",
+    "type": "user",
+    "attributes": {
+      "first_name": "Shifty",
+      "email": "shifty@makeshift.ca"
+    }
+  }
+}
+```
+
 This endpoint retrieves the data for a single user.
 
 ### HTTP Request
 
 `GET /api/public/v1/users/<id>`
+
+### Request Parameters
+
+Parameter | Default | Description
+--------- | ------- | -----------
+fields | All | A comma-separated list of fields to select. Example: `?fields[user]=first_name,email`
 
