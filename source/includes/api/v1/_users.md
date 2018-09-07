@@ -10,7 +10,7 @@ Authorization: Bearer 6b215a11bae7a710c09e1040de3005039904afeaa381e05f4a587ac261
 
 ```shell
 curl -X GET \
-  'https://app.makeshift.ca/api/public/v1/departments/548/shifts?from=2018-01-01&to=2018-08-30' \
+  'https://app.makeshift.ca/api/public/v1/users/7442' \
   -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b'
 ```
 
@@ -69,3 +69,59 @@ Parameter | Default | Description
 --------- | ------- | -----------
 fields | All | A comma-separated list of fields to select. Example: `?fields[user]=first_name,email`
 
+
+## Get a user listing
+
+```http
+GET /api/public/v1/users HTTP/1.1
+Host: app.makehshift.ca
+Authorization: Bearer <token>
+```
+
+```shell
+curl -X GET \
+  'https://app.makeshift.ca/api/public/v1/users' \
+  -H 'Authorization: Bearer <token>'
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "data": [
+    {
+      "id": "7344",
+      "type": "user",
+      "attributes": {
+        "first_name": "Company",
+        "last_name": "Admin",
+        "email": "mallison+iadmin@appcolony.ca"
+      }
+    },
+    {
+      "id": "7345",
+      "type": "user",
+      "attributes": {
+        "first_name": "Adam",
+        "last_name": "Millroy",
+        "email": "adammillroy7345@makeshift.ca"
+      }
+    }
+  ],
+  "meta": {
+    "total": 2
+  }
+}
+```
+
+Get a listing of users for a company.
+
+### HTTP Request
+
+`GET /api/public/v1/users`
+
+### Request Parameters
+
+Parameter | Default | Description
+--------- | ------- | -----------
+fields | All | A comma-separated list of fields to select. Example: `?fields[user]=first_name,email`
