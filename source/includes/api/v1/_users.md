@@ -24,7 +24,8 @@ curl -X GET \
     "attributes": {
       "first_name": "Shifty",
       "last_name": "McGee",
-      "email": "shifty@makeshift.ca"
+      "email": "shifty@makeshift.ca",
+      "employee_id": "3030"
     }
   }
 }
@@ -95,7 +96,8 @@ curl -X GET \
       "attributes": {
         "first_name": "Company",
         "last_name": "Admin",
-        "email": "mallison+iadmin@appcolony.ca"
+        "email": "mallison+iadmin@appcolony.ca",
+        "employee_id": "3030"
       }
     },
     {
@@ -104,7 +106,8 @@ curl -X GET \
       "attributes": {
         "first_name": "Adam",
         "last_name": "Millroy",
-        "email": "adammillroy7345@makeshift.ca"
+        "email": "adammillroy7345@makeshift.ca",
+        "employee_id": null
       }
     }
   ],
@@ -125,3 +128,11 @@ Get a listing of users for a company.
 Parameter | Default | Description
 --------- | ------- | -----------
 fields | All | A comma-separated list of fields to select. Example: `?fields[user]=first_name,email`
+
+
+### Filterable Properties
+
+Property | Example |
+-------- | ------- |
+email | `?filter[user][email]=emailio.esteves@makeshift.ca` 
+employee_id | `?filter[user][employee_id]=3030` 
