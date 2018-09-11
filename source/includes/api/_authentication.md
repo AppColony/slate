@@ -4,7 +4,7 @@
 
 ```http
 POST /oauth/token HTTP/1.1
-Host: app.makeshift.ca
+Host: id.makeshift.ca
 Content-Type: application/json
 Cache-Control: no-cache
 
