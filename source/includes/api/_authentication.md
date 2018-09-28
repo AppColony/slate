@@ -45,7 +45,7 @@ curl --request POST \
 
 ```http
 GET /api/public/v1/<endpoint> HTTP/1.1
-Host: app.makehshift.ca
+Host: app.makeshift.ca
 Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b
 ```
 
