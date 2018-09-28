@@ -12,12 +12,11 @@ toc_footers:
 includes:
   - api/authentication
   - api/v1/users
-  - errors
 
 search: true
 ---
 
 # Introduction
 
-Welcome to the MakeShift API! 
+Welcome to the MakeShift API!
 
