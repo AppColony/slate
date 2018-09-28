@@ -4,7 +4,7 @@
 
 ```http
 GET /api/public/v1/users/7442 HTTP/1.1
-Host: app.makehshift.ca
+Host: app.makeshift.ca
 Authorization: Bearer 6b215a11bae7a710c09e1040de3005039904afeaa381e05f4a587ac2613faf00
 ```
 
@@ -31,11 +31,11 @@ curl -X GET \
 }
 ```
 
-> Select only certain fields 
+> Select only certain fields
 
 ```http
 GET /api/public/v1/users/7442?fields[user]=first_name,email HTTP/1.1
-Host: app.makehshift.ca
+Host: app.makeshift.ca
 Authorization: Bearer 354c1536272216645a6a9f60670f69d302228f6277de100221799f4508f1db95
 ```
 
@@ -75,7 +75,7 @@ fields | All | A comma-separated list of fields to select. Example: `?fields[use
 
 ```http
 GET /api/public/v1/users HTTP/1.1
-Host: app.makehshift.ca
+Host: app.makeshift.ca
 Authorization: Bearer <token>
 ```
 
@@ -134,5 +134,5 @@ fields | All | A comma-separated list of fields to select. Example: `?fields[use
 
 Property | Example |
 -------- | ------- |
-email | `?filter[user][email]=emailio.esteves@makeshift.ca` 
-employee_id | `?filter[user][employee_id]=3030` 
+email | `?filter[user][email]=emailio.esteves@makeshift.ca`
+employee_id | `?filter[user][employee_id]=3030`
