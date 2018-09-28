@@ -147,10 +147,11 @@ fields | All | A comma-separated list of fields to select. Example: `?fields[use
 
 ### Filterable Properties
 
-Property | Example |
--------- | ------- |
-email | `?filter[user][email]=emailio.esteves@makeshift.ca`
-employee_id | `?filter[user][employee_id]=3030`
+Property | Example | Notes
+-------- | ------- | -----
+email | `?filter[user][email]=emailio.esteves@makeshift.ca` |
+employee_id | `?filter[user][employee_id]=3030` |
+role | `?filter[user][role]=department_admin` | Role should be one of `company_admin`, `location_admin`, `department_admin`, `employee`
 
 ### Error Codes
 
