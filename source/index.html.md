@@ -12,6 +12,8 @@ toc_footers:
 includes:
   - api/authentication
   - api/v1/users
+  - api/v1/users/index
+  - api/v1/users/show
 
 search: true
 ---
