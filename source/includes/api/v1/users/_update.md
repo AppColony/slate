@@ -3,7 +3,7 @@
 ```http
 PUT /api/public/v1/users/7345 HTTP/1.1
 Host: app.makeshift.ca
-Authorization: Bearer 3142fa748e2efb1b6e78e3a11a797cd1aafa76924d43ec5dc165c9591a2a8a52
+Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b
 
 {
   "data": {
@@ -18,7 +18,7 @@ Authorization: Bearer 3142fa748e2efb1b6e78e3a11a797cd1aafa76924d43ec5dc165c9591a
 ```shell
 curl -X PUT \
   https://app.makeshift.ca/api/public/v1/users/7345 \
-  -H 'Authorization: Bearer 3142fa748e2efb1b6e78e3a11a797cd1aafa76924d43ec5dc165c9591a2a8a52' \
+  -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b' \
   -d '{
   "data": {
     "type": "user",

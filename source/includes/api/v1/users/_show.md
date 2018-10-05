@@ -3,7 +3,7 @@
 ```http
 GET /api/public/v1/users/7442 HTTP/1.1
 Host: app.makeshift.ca
-Authorization: Bearer 6b215a11bae7a710c09e1040de3005039904afeaa381e05f4a587ac2613faf00
+Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b
 ```
 
 ```shell
@@ -34,13 +34,13 @@ curl -X GET \
 ```http
 GET /api/public/v1/users/7442?fields[user]=first_name,email HTTP/1.1
 Host: app.makeshift.ca
-Authorization: Bearer 354c1536272216645a6a9f60670f69d302228f6277de100221799f4508f1db95
+Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b
 ```
 
 ```shell
 curl -X GET \
   'https://app.makeshift.ca/api/public/v1/users/7442?fields[user]=first_name,email' \
-  -H 'Authorization: Bearer 354c1536272216645a6a9f60670f69d302228f6277de100221799f4508f1db95' \
+  -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b' \
 ```
 
 ```json
