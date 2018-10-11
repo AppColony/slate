@@ -65,6 +65,16 @@ email | `?filter[user][email]=emailio.esteves@makeshift.ca` |
 employee_id | `?filter[user][employee_id]=3030` |
 role | `?filter[user][role]=department_admin` | Role should be one of `company_admin`, `location_admin`, `department_admin`, `employee`
 
+### Pagination
+
+User listings are paginated by default. The maximum number of users per page is 100. Without specifying any pagination parameters the endpoint will paginate the equivalent of "page 1, page size 100" like so:
+
+`https://app.makeshift.ca/api/public/v1/users?page[number]=1&page[size]=100`
+
+Different pages and smaller page sizes can be specified like so:
+
+`https://app.makeshift.ca/api/public/v1/users?page[number]=3&page[size]=50`
+
 ## Get a user by email
 
 ```http
