@@ -56,7 +56,7 @@ Parameter | Default | Description
 --------- | ------- | -----------
 fields | All | A comma-separated list of fields to select. Example: `?fields[user]=first_name,email`
 page | Page 1, Size 100 | Pagination parameters. Example: `?page[number]=1&page[size]=100` (Reference: <a href='#pagination'>Pagination</a>) 
-sort | None | Sorting parameters. Example: `?sort=-first_name,id`
+sort | None | Sorting parameters. Example: `?sort=-first_name,id` (Reference: <a href='#sorting'>Sorting</a>)
 
 ### Filterable Properties
 
