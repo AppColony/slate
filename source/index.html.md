@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: MakeShift API Documentation
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - http
