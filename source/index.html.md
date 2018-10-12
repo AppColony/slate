@@ -14,6 +14,7 @@ includes:
   - api/v1/users
   - api/v1/users/show
   - api/v1/users/index
+  - api/pagination
   - api/error_codes
 
 search: true
