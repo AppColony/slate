@@ -24,7 +24,8 @@ curl -X GET \
         "first_name": "Company",
         "last_name": "Admin",
         "email": "mallison+iadmin@appcolony.ca",
-        "employee_id": "3030"
+        "employee_id": "3030",
+        "role": "company_admin"
       }
     },
     {
@@ -34,7 +35,8 @@ curl -X GET \
         "first_name": "Adam",
         "last_name": "Millroy",
         "email": "adammillroy7345@makeshift.ca",
-        "employee_id": null
+        "employee_id": null,
+        "role": "employee"
       }
     }
   ],
@@ -86,20 +88,21 @@ curl -X GET \
 
 ```json
 {
-    "data": [
-        {
-            "id": "7345",
-            "type": "user",
-            "attributes": {
-                "external_id": null,
-                "first_name": "Adam",
-                "last_name": "Millroy",
-                "email": "adammillroy7345@makeshift.ca",
-                "employee_id": "1071",
-                "updated_at": "2016-08-09 20:11:46 UTC"
-            }
+  "data": [
+    {
+      "id": "7345",
+        "type": "user",
+        "attributes": {
+          "external_id": null,
+          "first_name": "Adam",
+          "last_name": "Millroy",
+          "email": "adammillroy7345@makeshift.ca",
+          "employee_id": "1071",
+          "updated_at": "2016-08-09 20:11:46 UTC",
+          "role": "employee"
         }
-    ]
+    }
+  ]
 }
 ```
 
