@@ -3,6 +3,24 @@
 //   width: 100%;
 // }
 
+.content table {
+  display: table;
+  width: 50%;
+
+  thead {
+    border-top: 1px solid #ccc;
+    background: white; 
+  }
+
+  th:first-child {
+    padding-left: 28px; 
+  }
+
+  td:first-child {
+    padding-left: 28px; 
+  }
+}
+
 code {
   white-space: pre-wrap;
 }
