@@ -70,6 +70,14 @@ employee_id | `?filter[user][employee_id]=3030` |
 role | `?filter[user][role]=department_admin` | Role should be one of `company_admin`, `location_admin`, `department_admin`, `employee`
 updated_at | `?filter[user][updated_at](ge)=2018-10-03` | Find users that have been updated since a certain date (ISO8601 format)
 
+### Sortable Properties
+
+Property | Example | Notes
+-------- | ------- | -----
+id | `users?sort=id` | Reference: <a href='#sorting'>Sorting</a>
+role | `users?sort=role` | Reference: <a href='#sorting'>Sorting</a>
+email | `users?sort=email` | Reference: <a href='#sorting'>Sorting</a>
+
 ## Get a user by email
 
 ```http
