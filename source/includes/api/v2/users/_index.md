@@ -1,14 +1,14 @@
 ## Get a user listing
 
 ```http
-GET /api/public/v1/users HTTP/1.1
+GET /api/public/v2/users HTTP/1.1
 Host: app.makeshift.ca
 Authorization: Bearer <token>
 ```
 
 ```shell
 curl -X GET \
-  'https://app.makeshift.ca/api/public/v1/users' \
+  'https://app.makeshift.ca/api/public/v2/users' \
   -H 'Authorization: Bearer <token>'
 ```
 
@@ -50,7 +50,7 @@ Get a listing of users for a company.
 
 ### HTTP Request
 
-`GET /api/public/v1/users`
+`GET /api/public/v2/users`
 
 ### Request Parameters
 
@@ -81,14 +81,14 @@ email | `users?sort=email` | Reference: <a href='#sorting'>Sorting</a>
 ## Get a user by email
 
 ```http
-GET /api/public/v1/users HTTP/1.1
+GET /api/public/v2/users HTTP/1.1
 Host: app.makeshift.ca
 Authorization: Bearer <token>
 ```
 
 ```shell
 curl -X GET \
-  'https://app.makeshift.ca/api/public/v1/users?filter[user][email]=adammillroy7345@makeshift.ca' \
+  'https://app.makeshift.ca/api/public/v2/users?filter[user][email]=adammillroy7345@makeshift.ca' \
   -H 'Authorization: Bearer <token>'
 ```
 
