@@ -1,7 +1,7 @@
 ## Upsert a user
 
 ```http
-PATCH /api/public/v1/users HTTP/1.1
+PATCH /api/public/v2/users HTTP/1.1
 Host: app.makeshift.ca
 Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b
 
@@ -19,7 +19,7 @@ Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c
 
 ```shell
 curl -X PATCH \
-  https://app.makeshift.ca/api/public/v1/users \
+  https://app.makeshift.ca/api/public/v2/users \
   -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b' \
   -d '{
   "data": {
@@ -37,7 +37,7 @@ This endpoint will update a user with a given external ID, or create them if the
 
 ### HTTP Request
 
-`PATCH /api/public/v1/users`
+`PATCH /api/public/v2/users`
 
 ### Request Body
 
