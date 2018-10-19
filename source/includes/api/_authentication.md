@@ -44,14 +44,14 @@ curl --request POST \
 > To use your token in API requests:
 
 ```http
-GET /api/public/v1/<endpoint> HTTP/1.1
+GET /api/public/v2/<endpoint> HTTP/1.1
 Host: app.makeshift.ca
 Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b
 ```
 
 ```shell
 curl -X GET \
-  'https://app.makeshift.ca/api/public/v1/<endpoint>' \
+  'https://app.makeshift.ca/api/public/v2/<endpoint>' \
   -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b'
 ```
 
