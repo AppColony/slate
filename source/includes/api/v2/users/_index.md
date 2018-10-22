@@ -21,9 +21,9 @@ curl -X GET \
       "id": "7344",
       "type": "user",
       "attributes": {
-        "first_name": "Company",
-        "last_name": "Admin",
-        "email": "mallison+iadmin@appcolony.ca",
+        "first_name": "Brett",
+        "last_name": "Deakins",
+        "email": "brett.deakins@example.com",
         "employee_id": "3030",
         "role": "company_admin"
       }
@@ -34,7 +34,7 @@ curl -X GET \
       "attributes": {
         "first_name": "Adam",
         "last_name": "Millroy",
-        "email": "adammillroy7345@makeshift.ca",
+        "email": "adammillroy7345@example.com",
         "employee_id": null,
         "role": "employee"
       }
@@ -57,7 +57,7 @@ Get a listing of users for a company.
 Parameter | Default | Description
 --------- | ------- | -----------
 fields | All | A comma-separated list of fields to select. Example: `?fields[user]=first_name,email`
-page | Page 1, Size 100 | Pagination parameters. Example: `?page[number]=1&page[size]=100` (Reference: <a href='#pagination'>Pagination</a>) 
+page | Page 1, Size 100 | Pagination parameters. Example: `?page[number]=1&page[size]=100` (Reference: <a href='#pagination'>Pagination</a>)
 sort | None | Sorting parameters. Example: `?sort=-first_name,id` (Reference: <a href='#sorting'>Sorting</a>)
 
 ### Filterable Properties
