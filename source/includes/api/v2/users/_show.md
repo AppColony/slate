@@ -1,14 +1,14 @@
 ## Get a user by ID
 
 ```http
-GET /api/public/v1/users/7442 HTTP/1.1
+GET /api/public/v2/users/7442 HTTP/1.1
 Host: app.makeshift.ca
 Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b
 ```
 
 ```shell
 curl -X GET \
-  'https://app.makeshift.ca/api/public/v1/users/7442' \
+  'https://app.makeshift.ca/api/public/v2/users/7442' \
   -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b'
 ```
 
@@ -23,7 +23,8 @@ curl -X GET \
       "first_name": "Shifty",
       "last_name": "McGee",
       "email": "shifty@makeshift.ca",
-      "employee_id": "3030"
+      "employee_id": "3030",
+      "role": "employee"
     }
   }
 }
@@ -32,14 +33,14 @@ curl -X GET \
 > Select only certain fields
 
 ```http
-GET /api/public/v1/users/7442?fields[user]=first_name,email HTTP/1.1
+GET /api/public/v2/users/7442?fields[user]=first_name,email HTTP/1.1
 Host: app.makeshift.ca
 Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b
 ```
 
 ```shell
 curl -X GET \
-  'https://app.makeshift.ca/api/public/v1/users/7442?fields[user]=first_name,email' \
+  'https://app.makeshift.ca/api/public/v2/users/7442?fields[user]=first_name,email' \
   -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b' \
 ```
 
@@ -60,7 +61,7 @@ This endpoint retrieves the data for a single user.
 
 ### HTTP Request
 
-`GET /api/public/v1/users/<id>`
+`GET /api/public/v2/users/<id>`
 
 ### Request Parameters
 

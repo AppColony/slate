@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: MakeShift API Documentation
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - http
@@ -11,15 +11,13 @@ toc_footers:
 
 includes:
   - api/authentication
-  - api/v1/users
-  - api/v1/users/show
-  - api/v1/users/index
+  - api/v2/users
+  - api/v2/users/show
+  - api/v2/users/index
+  - api/pagination
+  - api/sorting
   - api/error_codes
 
 search: true
 ---
-
-# Introduction
-
-Welcome to the MakeShift API!
 
