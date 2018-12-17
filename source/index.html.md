@@ -14,6 +14,7 @@ includes:
   - api/v2/users
   - api/v2/users/show
   - api/v2/users/index
+  - api/v2/users/create
   - api/pagination
   - api/sorting
   - api/error_codes
