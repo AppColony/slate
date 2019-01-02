@@ -4,7 +4,11 @@
 PATCH /api/public/v2/users HTTP/1.1
 Host: app.makeshift.ca
 Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b
+```
 
+> A minimal payload example:
+
+```json
 {
   "data": {
     "type": "user",
@@ -44,8 +48,8 @@ This endpoint will update a user with a given external ID, or create them if the
 Parameter          | Required | Description
 ---------          | -------- | -----------
 external_id        | ✓        | An ID by which an API wishes to identify a User
-first_name         | ✗        | User's first name
-last_name          | ✗        | User's last name
+first_name         | ✓        | User's first name
+last_name          | ✓        | User's last name
 middle_name        | ✗        | User's middle name
 email              | ✗        | User's email address
 employee_id        | ✗        | Used for clocking in and out
