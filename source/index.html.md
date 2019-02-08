@@ -43,6 +43,7 @@ includes:
   - api/v2/job_sites/update
   - api/v2/user_job_sites
   - api/v2/user_job_sites/create
+  - api/v2/shifts
   - api/pagination
   - api/sorting
   - api/error_codes
