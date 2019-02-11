@@ -1,4 +1,4 @@
-## Get a listing of job site
+## Get a listing of job sites
 
 Get a listing of job sites for a company.
 
