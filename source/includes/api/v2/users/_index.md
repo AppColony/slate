@@ -72,11 +72,13 @@ updated_at | `?filter[user][updated_at](ge)=2018-10-03` | Find users that have b
 
 ### Sortable Properties
 
-Property | Example | Notes
--------- | ------- | -----
-id | `users?sort=id` | Reference: <a href='#sorting'>Sorting</a>
-role | `users?sort=role` | Reference: <a href='#sorting'>Sorting</a>
-email | `users?sort=email` | Reference: <a href='#sorting'>Sorting</a>
+Property | Example
+-------- | -------
+id | `users?sort=id`
+role | `users?sort=role`
+email | `users?sort=email`
+
+Reference: <a href='#sorting'>Sorting</a>
 
 ## Get a user by email
 
