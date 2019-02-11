@@ -44,6 +44,8 @@ includes:
   - api/v2/user_job_sites
   - api/v2/user_job_sites/create
   - api/v2/shifts
+  - api/v2/shifts/show
+  - api/v2/shifts/index
   - api/pagination
   - api/sorting
   - api/error_codes
