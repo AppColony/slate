@@ -57,7 +57,7 @@ curl -X GET \
     }
   ],
   "meta": {
-      "shown": 3
+      "shown": 2
   },
   "links": {
       "self": "/api/public/v2/locations?page%5Bnumber%5D=1&page%5Bsize%5D=100"
