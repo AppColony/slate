@@ -18,27 +18,27 @@ includes:
   - api/v2/users/update
   - api/v2/users/upsert
   - api/v2/locations
-  - api/v2/locations/index
   - api/v2/locations/show
+  - api/v2/locations/index
   - api/v2/locations/create
   - api/v2/locations/update
   - api/v2/departments
-  - api/v2/departments/index
   - api/v2/departments/show
+  - api/v2/departments/index
   - api/v2/departments/create
   - api/v2/departments/update
   - api/v2/department_users
   - api/v2/department_users/create
   - api/v2/positions
-  - api/v2/positions/index
   - api/v2/positions/show
+  - api/v2/positions/index
   - api/v2/positions/create
   - api/v2/positions/update
   - api/v2/user_positions
   - api/v2/user_positions/create
   - api/v2/job_sites
-  - api/v2/job_sites/index
   - api/v2/job_sites/show
+  - api/v2/job_sites/index
   - api/v2/job_sites/create
   - api/v2/job_sites/update
   - api/v2/user_job_sites
