@@ -116,9 +116,11 @@ user_id | `shifts?sort=updated_at`
 department_id | `shifts?sort=department_id`
 job_site_id | `shifts?sort=position_id`
 position_id | `shifts?sort=position_id`
+available_shift_id | `shifts?sort=available_shift_id`
 date | `shifts?sort=date`
 starts_at | `shifts?sort=starts_at`
 ends_at | `shifts?sort=ends_at`
-update_at | `shifts?sort=updated_at`
+updated_at | `shifts?sort=updated_at`
+published_at | `shifts?sort=published_at`
 
 Reference: <a href='#sorting'>Sorting</a>
