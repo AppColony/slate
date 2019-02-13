@@ -1,5 +1,39 @@
 ## Get a listing of job sites
 
+```http
+GET /api/public/v2/job_sites HTTP/1.1
+Host: app.makeshift.ca
+Authorization: Bearer <token>
+```
+
+```shell
+curl -X GET \
+  'https://app.makeshift.ca/api/public/v2/job_sites' \
+  -H 'Authorization: Bearer <token>'
+```
+
+```json
+{
+    "data": [
+        {
+            "id": "1",
+            "type": "job_site",
+            "attributes": {
+                "department_id": 548,
+                "name": "Job Site 0001",
+                "external_id": null
+            }
+        }
+    ],
+    "meta": {
+        "shown": 1
+    },
+    "links": {
+    }
+}
+```
+
+
 Get a listing of job sites for a company.
 
 ### HTTP Request
