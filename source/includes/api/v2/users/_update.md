@@ -51,7 +51,6 @@ middle_name        | User's middle name
 email              | User's email address
 employee_id        | Used for clocking in and out
 phone_number       | User's phone number
-phone_country_code | User's phone country code
 hire_date          | Date the user was hired
 employment_type    | "Full Time", "Part Time", or "Casual"
 role               | "employee", "department_admin", "location_admin", or "company_admin"
