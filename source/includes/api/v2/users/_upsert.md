@@ -48,8 +48,8 @@ This endpoint will update a user with a given external ID, or create them if the
 Parameter          | Required | Description
 ---------          | -------- | -----------
 external_id        | ✓        | An ID by which an API wishes to identify a User
-first_name         | ✓        | User's first name
-last_name          | ✓        | User's last name
+first_name         | Create Only  | User's first name
+last_name          | Create Only  | User's last name
 middle_name        | ✗        | User's middle name
 email              | ✗        | User's email address
 employee_id        | ✗        | Used for clocking in and out
