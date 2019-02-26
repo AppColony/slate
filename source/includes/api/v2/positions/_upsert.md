@@ -23,7 +23,7 @@ Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c
 
 ```shell
 curl -X PATCH \
-  https://app.makeshift.ca/api/public/v2/users \
+  https://app.makeshift.ca/api/public/v2/positions \
   -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b' \
   -d '{
   "data": {
