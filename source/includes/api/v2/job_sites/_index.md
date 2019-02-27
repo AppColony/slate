@@ -64,4 +64,4 @@ id | `job_site?sort=id`
 department_id | `job_site?sort=department_id`
 name | `job_site?sort=name`
 
-Reference: <a href='#sorting'>Sorting</a>`
+Reference: <a href='#sorting'>Sorting</a>
