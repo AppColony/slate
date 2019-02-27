@@ -47,6 +47,7 @@ includes:
   - api/v2/job_sites/upsert
   - api/v2/job_sites/delete
   - api/v2/user_job_sites
+  - api/v2/user_job_sites/index
   - api/v2/user_job_sites/create
   - api/v2/user_job_sites/delete
   - api/v2/shifts
