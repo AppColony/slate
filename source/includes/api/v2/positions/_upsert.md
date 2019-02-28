@@ -11,7 +11,7 @@ Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c
 ```json
 {
   "data": {
-    "type": "positions",
+    "type": "position",
     "attributes": {
       "external_name": "E01-Cook",
       "name": "Sandwich Artist",
@@ -27,7 +27,7 @@ curl -X PATCH \
   -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b' \
   -d '{
   "data": {
-    "type": "positions",
+    "type": "position",
     "attributes": {
       "external_name": "E01-Cook",
       "name": "Sandwich Artist",
@@ -37,7 +37,7 @@ curl -X PATCH \
 }'
 ```
 
-This endpoint will update a position with a given external name, or create one if it don't exist.
+This endpoint will update a position with a given external name, or create one if it doesn't exist.
 
 ### HTTP Request
 
@@ -47,7 +47,7 @@ This endpoint will update a position with a given external name, or create one i
 
 Parameter          |  Create   | Update       | Description
 ---------          | --------- | ----------   |-----------
-external_name      |  ✓        | ✓            | An ID by which an API wishes to identify a Position
+external_name      |  ✓        | ✓            | A unique identifier for a Position
 name               |  ✓        | ○            | Position's name
 department_id      |  ✓        | ✗            | Department to which the Position belongs
 

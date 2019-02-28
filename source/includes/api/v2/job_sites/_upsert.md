@@ -37,7 +37,7 @@ curl -X PATCH \
 }'
 ```
 
-This endpoint will update a job site with a given external id, or create one if it don't exist.
+This endpoint will update a job site with a given external id, or create one if it doesn't exist.
 
 ### HTTP Request
 
@@ -47,7 +47,7 @@ This endpoint will update a job site with a given external id, or create one if 
 
 Parameter          |  Create   | Update       | Description
 ---------          | --------- | ----------   |-----------
-external_id        |  ✓        | ✓            | An ID by which an API wishes to identify a Job Site
+external_id        |  ✓        | ✓            | A unique identifier for a Job Site
 name               |  ✓        | ○            | Job Site's name
 department_id      |  ✓        | ✗            | Department to which the Job Site belongs
 
