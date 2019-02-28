@@ -22,6 +22,7 @@ includes:
   - api/v2/locations/index
   - api/v2/locations/create
   - api/v2/locations/update
+  - api/v2/locations/upsert
   - api/v2/departments
   - api/v2/departments/show
   - api/v2/departments/index
