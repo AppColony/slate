@@ -48,7 +48,7 @@ Parameter          |  Create   | Update       | Description
 external_name      |  ✓        | ✓            | A unique idenfier for a Location
 name               |  ✓        | ○            | Location's name
 time_zone          |  ✓        | ✗            | Location's time zone
-week_starts_on     |  ○        | ○            | A value from 0 to 6 indicating which day of the week the calendar
+week_starts_on     |  ○        | ✗            | A value from 0 to 6 indicating which day of the week the calendar
 
 ✓ = Required &nbsp; ○ = Optional &nbsp; ✗ = Ignored
 
