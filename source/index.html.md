@@ -28,6 +28,7 @@ includes:
   - api/v2/departments/index
   - api/v2/departments/create
   - api/v2/departments/update
+  - api/v2/departments/upsert
   - api/v2/department_users
   - api/v2/department_users/create
   - api/v2/positions
