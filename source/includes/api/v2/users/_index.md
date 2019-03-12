@@ -64,7 +64,7 @@ sort | None | Sorting parameters. Example: `?sort=-first_name,id` (Reference: <a
 
 Property | Example | Notes
 -------- | ------- | -----
-external_id | `?filter[user][external_id]=G3XC900001` | A foreign key to identify users across systems
+api_id | `?filter[user][api_id]=G3XC900001` | A foreign key to identify users across systems
 email | `?filter[user][email]=emailio@makeshift.ca` |
 employee_id | `?filter[user][employee_id]=3030` |
 role | `?filter[user][role]=department_admin` | Role should be one of `company_admin`, `location_admin`, `department_admin`, `employee`
@@ -103,7 +103,7 @@ curl -X GET \
       "id": "7345",
         "type": "user",
         "attributes": {
-          "external_id": null,
+          "api_id": null,
           "first_name": "Adam",
           "last_name": "Millroy",
           "email": "adammillroy7345@makeshift.ca",
