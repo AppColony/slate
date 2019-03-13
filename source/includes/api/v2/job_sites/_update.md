@@ -44,4 +44,5 @@ This endpoint updates a job site with a given ID.
 Parameter   | Description
 ---------   | -----------
 name        | Job Site's name
-external_id | An ID by which an API wishes to identify a Job Site
+api_id | A unique ID for identifying a Job Site
+external_id | An identifier for a Job Site

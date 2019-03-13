@@ -44,4 +44,5 @@ This endpoint updates a department with a given ID.
 Parameter   | Description
 ---------   | -----------
 name        | Department's name
-external_id | An ID by which an API wishes to identify a Department
+external_id | An identifier for a Department
+api_id      | A unique ID for identifying a Department

@@ -44,4 +44,5 @@ This endpoint updates a position with a given ID.
 Parameter     | Description
 ---------     | -----------
 name          | Position's name
-external_name | An ID by which an API wishes to identify a Position
+api_id        | A unique ID for identifying a Position
+external_name | An identifier for a Position

@@ -44,4 +44,5 @@ This endpoint updates a location with a given ID.
 Parameter     | Description
 ---------     | -----------
 name          | Location's name
-external_name | An ID by which an API wishes to identify a Location
+api_id        | A unique ID for identifying a Location
+external_name | An identifier for a Location

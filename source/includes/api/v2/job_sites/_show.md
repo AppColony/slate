@@ -21,6 +21,7 @@ curl -X GET \
             "department_id": 548,
             "name": "East Site 0001",
             "external_id": null
+            "api_id": null
         }
     }
 }

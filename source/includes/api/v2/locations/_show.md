@@ -27,6 +27,7 @@ curl -X GET \
         "name": "Victoria",
         "time_zone": "America/Los_Angeles",
         "external_name": null,
+        "api_id": null,
         "week_starts_on": 0
     },
     "relationships": {

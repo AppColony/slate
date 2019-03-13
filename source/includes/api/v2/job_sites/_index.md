@@ -21,7 +21,8 @@ curl -X GET \
             "attributes": {
                 "department_id": 548,
                 "name": "Job Site 0001",
-                "external_id": null
+                "external_id": null,
+                "api_id": "J-200"
             }
         }
     ],
@@ -52,7 +53,8 @@ sort | None | Sorting parameters. Example: `?sort=-name,id` (Reference: <a href=
 
 Property | Example | Notes
 -------- | ------- | -----
-external_id | `?filter[job_site][external_name]=G3XC900001` | A foreign key to identify a job_site across systems
+api_id   | `?filter[job_site][api_id]=J-200` | A unique ID for identifying a Job Site.
+external_id | `?filter[job_site][external_name]=G3XC900001` | An identifier for a Job Site.
 name | `?filter[job_site][name]=makeshift` | Job site name
 department_id | `?filter[job_site][department_id]=makeshift` | Department ID
 

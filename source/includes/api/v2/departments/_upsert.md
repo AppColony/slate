@@ -15,7 +15,8 @@ Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c
     "attributes": {
       "name": "IT Dept.",
       "location_id": 222,
-      "external_id": "ITD-002"
+      "external_id": "2",
+      "api_id": "ITD-002"
     }
   }
 }
@@ -31,13 +32,14 @@ curl -X PATCH \
     "attributes": {
       "name": "IT Dept.",
       "location_id": 222,
-      "external_id": "ITD-002"
+      "external_id": "2",
+      "api_id": "ITD-002"
     }
   }
 }'
 ```
 
-This endpoint will update a department with a given external id, or create one if it doesn't exist.
+This endpoint will update a department with a given API ID, or create one if it doesn't exist.
 
 ### HTTP Request
 
@@ -47,7 +49,8 @@ This endpoint will update a department with a given external id, or create one i
 
 Parameter          |  Create   | Update       | Description
 ---------          | --------- | ----------   |-----------
-external_id        |  ✓        | ✓            | A unique idenfier for a Department
+api_id             |  ✓        | ✓            | A unique ID for identifying a Department
+external_id        |  ✓        | ✓            | An idenfier for a Department
 name               |  ✓        | ○            | Department's name
 location_id        |  ✓        | ✗            | Location's ID
 

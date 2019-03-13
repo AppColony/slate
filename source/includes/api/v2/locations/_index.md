@@ -22,6 +22,7 @@ curl -X GET \
           "name": "Victoria",
           "time_zone": "America/Los_Angeles",
           "external_name": null,
+          "api_id": null,
           "week_starts_on": 0
       },
       "relationships": {
@@ -42,6 +43,7 @@ curl -X GET \
         "name": "Calgary",
         "time_zone": "America/Denver",
         "external_name": null,
+        "api_id": null,
         "week_starts_on": 0
       },
       "relationships": {
@@ -83,7 +85,8 @@ sort | None | Sorting parameters. Example: `?sort=-name,id` (Reference: <a href=
 
 Property | Example | Notes
 -------- | ------- | -----
-external_name | `?filter[location][external_name]=G3XC900001` | A foreign key to identify locations across systems
+api_id | `?filter[location][api_id]=L-700` | A foreign key to identify locations across systems
+external_name | `?filter[location][external_name]=G3XC900001` | An identifier for a location
 name | `?filter[location][name]=makeshift` | Location name
 updated_at | `?filter[location][updated_at](ge)=2018-10-03` | Find locations that have been updated since a certain date (ISO8601 format)
 

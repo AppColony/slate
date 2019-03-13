@@ -24,7 +24,8 @@ curl -X GET \
       "last_name": "McGee",
       "email": "shifty@makeshift.ca",
       "employee_id": "3030",
-      "role": "employee"
+      "role": "employee",
+      "api_id": null
     }
   }
 }

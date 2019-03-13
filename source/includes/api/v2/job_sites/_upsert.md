@@ -13,7 +13,7 @@ Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c
   "data": {
     "type": "job_sites",
     "attributes": {
-      "external_id": "J02-Cafe",
+      "api_id": "J02-Cafe",
       "name": "Coffee Plaza",
       "department_id": 1
     }
@@ -29,7 +29,7 @@ curl -X PATCH \
   "data": {
     "type": "job_sites",
     "attributes": {
-      "external_id": "J02-Cafe",
+      "api_id": "J02-Cafe",
       "name": "Coffee Plaza",
       "department_id": 1
     }
@@ -37,7 +37,7 @@ curl -X PATCH \
 }'
 ```
 
-This endpoint will update a job site with a given external id, or create one if it doesn't exist.
+This endpoint will update a job site with a given API ID, or create one if it doesn't exist.
 
 ### HTTP Request
 
@@ -47,7 +47,8 @@ This endpoint will update a job site with a given external id, or create one if 
 
 Parameter          |  Create   | Update       | Description
 ---------          | --------- | ----------   |-----------
-external_id        |  ✓        | ✓            | A unique identifier for a Job Site
+api_id             |  ✓        | ✓            | A unique identifier for a Job Site
+external_id        |  ○        | ○            | An identifier for a Job Site
 name               |  ✓        | ○            | Job Site's name
 department_id      |  ✓        | ✗            | Department to which the Job Site belongs
 

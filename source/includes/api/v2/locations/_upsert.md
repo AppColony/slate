@@ -14,7 +14,8 @@ Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c
     "type": "location",
     "attributes": {
       "name": "Makeshift Fitness",
-      "time_zone": "America/New_York"
+      "time_zone": "America/New_York",
+      "api_id": "D-100"
     }
   }
 }
@@ -29,13 +30,14 @@ curl -X PATCH \
     "type": "location",
     "attributes": {
       "name": "Makeshift Fitness",
-      "time_zone": "America/New_York"
+      "time_zone": "America/New_York",
+      "api_id": "D-100"
     }
   }
 }'
 ```
 
-This endpoint will update a location with a given external name, or create one if it doesn't exist.
+This endpoint will update a location with a given API ID, or create one if it doesn't exist.
 
 ### HTTP Request
 
@@ -45,7 +47,7 @@ This endpoint will update a location with a given external name, or create one i
 
 Parameter          |  Create   | Update       | Description
 ---------          | --------- | ----------   |-----------
-external_name      |  ✓        | ✓            | A unique idenfier for a Location
+api_id             |  ✓        | ✓            | A unique idenfier for a Location
 name               |  ✓        | ○            | Location's name
 time_zone          |  ✓        | ✗            | Location's time zone
 week_starts_on     |  ○        | ✗            | A value from 0 to 6 indicating which day of the week the calendar

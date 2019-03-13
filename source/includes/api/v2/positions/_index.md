@@ -21,7 +21,8 @@ curl -X GET \
             "attributes": {
                 "department_id": 548,
                 "name": "Chef",
-                "external_name": null
+                "external_name": null,
+                "api_id": null
             }
         }
     ],
@@ -52,7 +53,8 @@ sort | None | Sorting parameters. Example: `?sort=-name,id` (Reference: <a href=
 
 Property | Example | Notes
 -------- | ------- | -----
-external_name | `?filter[position][external_name]=G3XC900001` | A foreign key to identify a position across systems
+api_id   | `?filter[position][api_id]=P-202` | A unique ID for identifying a position across systems
+external_name | `?filter[position][external_name]=G3XC900001` | An indentifier for a position
 name | `?filter[position][name]=makeshift` | Position name
 department_id | `?filter[position][department_id]=makeshift` | Department ID
 

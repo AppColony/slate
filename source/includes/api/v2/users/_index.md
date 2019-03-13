@@ -25,7 +25,8 @@ curl -X GET \
         "last_name": "Deakins",
         "email": "brett.deakins@example.com",
         "employee_id": "3030",
-        "role": "company_admin"
+        "role": "company_admin",
+        "api_id": null
       }
     },
     {
@@ -36,7 +37,8 @@ curl -X GET \
         "last_name": "Millroy",
         "email": "adammillroy7345@example.com",
         "employee_id": null,
-        "role": "employee"
+        "role": "employee",
+        "api_id": null
       }
     }
   ],
@@ -103,13 +105,13 @@ curl -X GET \
       "id": "7345",
         "type": "user",
         "attributes": {
-          "api_id": null,
           "first_name": "Adam",
           "last_name": "Millroy",
           "email": "adammillroy7345@makeshift.ca",
           "employee_id": "1071",
           "updated_at": "2016-08-09 20:11:46 UTC",
-          "role": "employee"
+          "role": "employee",
+          "api_id": null
         }
     }
   ]

@@ -20,7 +20,8 @@ curl -X GET \
         "attributes": {
             "department_id": 548,
             "name": "Chef",
-            "external_name": null
+            "external_name": null,
+            "api_id": null
         }
     }
 }

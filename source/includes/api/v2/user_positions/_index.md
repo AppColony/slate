@@ -52,7 +52,7 @@ sort | None | Sorting parameters. Example: `?sort=-user_id,id` (Reference: <a hr
 Property | Example | Notes
 -------- | ------- | -----
 id | `?filter[user_position][id]=1` | User Positionn ID
-positionn_id | `?filter[user_position][position_id]=1` | Position ID
+position_id | `?filter[user_position][position_id]=1` | Position ID
 user_id | `?filter[user_position][user_id]=1` | User ID
 
 ### Sortable Properties

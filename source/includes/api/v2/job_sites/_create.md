@@ -47,4 +47,5 @@ Parameter          | Required | Default     | Description
 ---------          | -------- | -------     | -----------
 name               | ✓        |             | Job Site's name
 department_id      | ✓        |             | Department to which the Job Site belongs
-external_id        | ✗        |             | An ID by which an API wishes to identify a Job Site
+api_id             | ✗        |             | A unique ID for identifying a Job Site
+external_id        | ✗        |             | An identifier a Job Site

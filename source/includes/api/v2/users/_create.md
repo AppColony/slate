@@ -54,4 +54,4 @@ phone_number       | ✗        |             | User's phone number
 hire_date          | ✗        |             | Date the user was hired
 employment_type    | ✗        | "full_time" | "full_time", "part_time", or "casual"
 role               | ✗        | "employee"  | "employee", "department_admin", "location_admin", or "company_admin"
-api_id             | ✗        |             | A unique ID for identifying a User
+api_id             | ✗        | null        | A unique ID for identifying a User

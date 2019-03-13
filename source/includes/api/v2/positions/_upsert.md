@@ -13,7 +13,7 @@ Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c
   "data": {
     "type": "position",
     "attributes": {
-      "external_name": "E01-Cook",
+      "api_id": "E01-Cook",
       "name": "Sandwich Artist",
       "department_id": 1
     }
@@ -29,7 +29,7 @@ curl -X PATCH \
   "data": {
     "type": "position",
     "attributes": {
-      "external_name": "E01-Cook",
+      "api_id": "E01-Cook",
       "name": "Sandwich Artist",
       "department_id": 1
     }
@@ -37,7 +37,7 @@ curl -X PATCH \
 }'
 ```
 
-This endpoint will update a position with a given external name, or create one if it doesn't exist.
+This endpoint will update a position with a given API ID, or create one if it doesn't exist.
 
 ### HTTP Request
 
@@ -47,7 +47,7 @@ This endpoint will update a position with a given external name, or create one i
 
 Parameter          |  Create   | Update       | Description
 ---------          | --------- | ----------   |-----------
-external_name      |  ✓        | ✓            | A unique identifier for a Position
+api_id             |  ✓        | ✓            | A unique identifier for a Position
 name               |  ✓        | ○            | Position's name
 department_id      |  ✓        | ✗            | Department to which the Position belongs
 

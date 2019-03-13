@@ -27,6 +27,7 @@ curl -X GET \
       "name": "Kitchen",
       "location_id": 325,
       "external_id": "001",
+      "api_id": "D-222",
       "last_published_at": "2019-01-29 23:51:09 UTC",
       "updated_at": "2019-01-29 23:51:09 UTC"
     },
