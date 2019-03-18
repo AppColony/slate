@@ -1,4 +1,4 @@
-## Get a user listing
+## Get a User listing
 
 ```http
 GET /api/public/v2/users HTTP/1.1
@@ -48,7 +48,7 @@ curl -X GET \
 }
 ```
 
-Get a listing of users for a company.
+Get a listing of Users for a company.
 
 ### HTTP Request
 
@@ -66,7 +66,7 @@ sort | None | Sorting parameters. Example: `?sort=-first_name,id` (Reference: <a
 
 Property | Example | Notes
 -------- | ------- | -----
-api_id | `?filter[user][api_id]=G3XC900001` | A foreign key to identify users across systems
+api_id | `?filter[user][api_id]=G3XC900001` | A foreign key to identify Users across systems
 email | `?filter[user][email]=emailio@makeshift.ca` |
 employee_id | `?filter[user][employee_id]=3030` |
 role | `?filter[user][role]=department_admin` | Role should be one of `company_admin`, `location_admin`, `department_admin`, `employee`
@@ -118,6 +118,6 @@ curl -X GET \
 }
 ```
 
-You may use a filter to retrieve users matching specific criteria. In this case, we use a filter by email address to find users who have that specific email.
+You may use a filter to retrieve users matching specific criteria. In this case, we use a filter by email address to find Users who have that specific email.
 
 To filter by a specific attribute, append a `filter` clause to the query string. `filter` clauses may be composed together if you would like to find users meeting a set of criteria.

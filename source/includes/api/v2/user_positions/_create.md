@@ -1,4 +1,4 @@
-## Associate a user with a position
+# Associate a User with a Position
 
 ```http
 POST /api/public/v2/user_positions HTTP/1.1
@@ -35,7 +35,7 @@ curl -X POST \
 }'
 ```
 
-This endpoint creates an association between a user and a position.
+This endpoint creates an association between a User and a Position.
 
 ### HTTP Request
 
@@ -45,5 +45,5 @@ This endpoint creates an association between a user and a position.
 
 Parameter   | Required | Default | Description
 ---------   | -------- | ------- | -----------
-user_id     | ✓        |         | User ID to associate with a position
-position_id | ✓        |         | Position ID to associate user with
+user_id     | ✓        |         | User ID to associate with a Position
+position_id | ✓        |         | Position ID to associate with a User

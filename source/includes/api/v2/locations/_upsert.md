@@ -1,4 +1,4 @@
-## Upsert a location
+## Upsert a Location
 
 ```http
 PATCH /api/public/v2/positions HTTP/1.1
@@ -37,7 +37,7 @@ curl -X PATCH \
 }'
 ```
 
-This endpoint will update a location with a given API ID, or create one if it doesn't exist.
+This endpoint will update a Location with a given API ID, or create one if it doesn't exist.
 
 ### HTTP Request
 

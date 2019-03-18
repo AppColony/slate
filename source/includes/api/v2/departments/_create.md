@@ -1,4 +1,4 @@
-## Create a department
+## Create a Department
 
 ```http
 POST /api/public/v2/departments HTTP/1.1
@@ -37,7 +37,7 @@ curl -X POST \
 }'
 ```
 
-This endpoint creates a new department.
+This endpoint creates a new Department.
 
 ### HTTP Request
 

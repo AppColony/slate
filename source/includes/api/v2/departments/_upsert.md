@@ -1,4 +1,4 @@
-## Upsert a department
+## Upsert a Department
 
 ```http
 PATCH /api/public/v2/departments HTTP/1.1
@@ -39,7 +39,7 @@ curl -X PATCH \
 }'
 ```
 
-This endpoint will update a department with a given API ID, or create one if it doesn't exist.
+This endpoint will update a Department with a given API ID, or create one if it doesn't exist.
 
 ### HTTP Request
 

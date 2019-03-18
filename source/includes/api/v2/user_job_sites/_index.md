@@ -1,4 +1,4 @@
-## Get a listing of user job sites
+## Get a listing of User Job Sites
 
 ```http
 GET /api/public/v2/user_job_sites HTTP/1.1
@@ -33,7 +33,7 @@ curl -X GET \
 ```
 
 
-Get a listing of user job sites for a company.
+Get a listing of User Job Sites for a company.
 
 ### HTTP Request
 

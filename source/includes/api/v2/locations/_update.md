@@ -1,4 +1,4 @@
-## Update a location by ID
+## Update a Location by ID
 
 ```http
 PUT /api/public/v2/locations/222 HTTP/1.1
@@ -33,7 +33,7 @@ curl -X PUT \
 }'
 ```
 
-This endpoint updates a location with a given ID.
+This endpoint updates a Location with a given ID.
 
 ### HTTP Request
 

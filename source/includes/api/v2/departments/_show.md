@@ -1,6 +1,6 @@
-## Get a department by ID
+## Get a Department by ID
 
-This endpoint retrieves the data for a single department.
+This endpoint retrieves the data for a single Department.
 
 ### HTTP Request
 

@@ -1,4 +1,4 @@
-## Upsert a user
+## Upsert a User
 
 ```http
 PATCH /api/public/v2/users HTTP/1.1
@@ -37,7 +37,7 @@ curl -X PATCH \
 }'
 ```
 
-This endpoint will update a user with a given API ID, or create them if they don't exist.
+This endpoint will update a User with a given API ID, or create them if they don't exist.
 
 ### HTTP Request
 

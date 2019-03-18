@@ -1,4 +1,4 @@
-## Get a location by ID
+## Get a Location by ID
 
 This endpoint retrieves the data for a single location.
 

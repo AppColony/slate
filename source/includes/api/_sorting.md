@@ -1,6 +1,6 @@
 # Sorting
 
-> Sort users by "employee_id` (ascending)
+> Sort users by "employee_id" (ascending)
 
 ```http
 GET /public/v2/users?sort=employee_id HTTP/1.1

@@ -1,4 +1,4 @@
-## Create a user
+## Create a User
 
 ```http
 POST /api/public/v2/users HTTP/1.1
@@ -35,7 +35,7 @@ curl -X POST \
 }'
 ```
 
-This endpoint creates a new user.
+This endpoint creates a new User.
 
 ### HTTP Request
 

@@ -1,4 +1,4 @@
-## Get a listing of user positions
+## Get a listing of User Positions
 
 ```http
 GET /api/public/v2/user_positions HTTP/1.1
@@ -33,7 +33,7 @@ curl -X GET \
 ```
 
 
-Get a listing of user positions for a company.
+Get a listing of User Positions for a company.
 
 ### HTTP Request
 
@@ -51,7 +51,7 @@ sort | None | Sorting parameters. Example: `?sort=-user_id,id` (Reference: <a hr
 
 Property | Example | Notes
 -------- | ------- | -----
-id | `?filter[user_position][id]=1` | User Positionn ID
+id | `?filter[user_position][id]=1` | User Position ID
 position_id | `?filter[user_position][position_id]=1` | Position ID
 user_id | `?filter[user_position][user_id]=1` | User ID
 
@@ -59,7 +59,7 @@ user_id | `?filter[user_position][user_id]=1` | User ID
 
 Property | Example
 -------- | -------
-id | User Job Site ID
+id | User Position ID
 position_id | Position ID
 user_id | User ID
 
