@@ -1,4 +1,4 @@
-## Get a shift listing
+## Get a Shift listing
 
 ```http
 GET /api/public/v2/shifts HTTP/1.1
@@ -77,7 +77,7 @@ curl -X GET \
 }
 ```
 
-Get a listing of shifts for a company.
+Get a listing of Shifts for a company.
 
 ### HTTP Request
 
@@ -101,11 +101,11 @@ external_id | `?filter[shift][external_id]=G3XC900001` | A foreign key to identi
 department_id | `?filter[shift][department_id]=6789` | Department ID
 location_id | `?filter[shift][location_id]=1234` | Location ID
 date | `?filter[shift][date](eq)='2018-12-11'` | The start date of a shift (ISO8601 format)
-starts_at | `?filter[shift][starts_at](ge)='2018-09-28 01:00:00 UTC'` | The start time of a shift
-ends_at | `?filter[shift][ends_at](ge)='2018-09-29 04:30:00 UTC'` | The end time of a shift
-updated_at | `?filter[shift][updated_at](ge)=2018-10-03` | Find shifts that have been updated since a certain date (ISO8601 format)
-published_at | `?filter[shift][updated_at](ge)=2018-10-03` | Find shifts that have been pulished since a certain date (ISO8601 format)
-published | `?filter[shift][updated_at](ge)=true` | Find shifts that have been publshed
+starts_at | `?filter[shift][starts_at](ge)='2018-09-28 01:00:00 UTC'` | The start time of a Shift
+ends_at | `?filter[shift][ends_at](ge)='2018-09-29 04:30:00 UTC'` | The end time of a Shift
+updated_at | `?filter[shift][updated_at](ge)=2018-10-03` | Find Shifts that have been updated since a certain date (ISO8601 format)
+published_at | `?filter[shift][updated_at](ge)=2018-10-03` | Find Shifts that have been pulished since a certain date (ISO8601 format)
+published | `?filter[shift][updated_at](ge)=true` | Find Shifts that have been publshed
 
 ### Sortable Properties
 

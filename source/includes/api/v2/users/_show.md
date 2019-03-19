@@ -1,4 +1,4 @@
-## Get a user by ID
+## Get a User by ID
 
 ```http
 GET /api/public/v2/users/7442 HTTP/1.1
@@ -24,7 +24,8 @@ curl -X GET \
       "last_name": "McGee",
       "email": "shifty@makeshift.ca",
       "employee_id": "3030",
-      "role": "employee"
+      "role": "employee",
+      "api_id": null
     }
   }
 }
@@ -57,7 +58,7 @@ curl -X GET \
 }
 ```
 
-This endpoint retrieves the data for a single user.
+This endpoint retrieves the data for a single User.
 
 ### HTTP Request
 

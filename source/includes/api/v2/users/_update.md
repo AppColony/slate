@@ -1,4 +1,4 @@
-## Update a user by ID
+## Update a User by ID
 
 ```http
 PUT /api/public/v2/users/7345 HTTP/1.1
@@ -33,9 +33,9 @@ curl -X PUT \
 }'
 ```
 
-This endpoint updates a user with a given ID.
+This endpoint updates a User with a given ID.
 
-**Note:** The ID here is a MakeShift ID (a simple integer). In order to create and update users using an ID from the integrating system please refer to a `upsert` endpoint.
+**Note:** The ID here is a MakeShift ID (a simple integer). In order to create and update Users using an ID from the integrating system please refer to a `upsert` endpoint.
 
 ### HTTP Request
 
@@ -51,7 +51,7 @@ middle_name        | User's middle name
 email              | User's email address
 employee_id        | Used for clocking in and out
 phone_number       | User's phone number
-hire_date          | Date the user was hired
+hire_date          | Date the User was hired
 employment_type    | "full_time", "part_time", or "casual"
 role               | "employee", "department_admin", "location_admin", or "company_admin"
-external_id        | An ID by which an API wishes to identify a User
+api_id             | A unique ID for identifying a User

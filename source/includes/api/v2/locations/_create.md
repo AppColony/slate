@@ -1,4 +1,4 @@
-## Create a location
+## Create a Location
 
 ```http
 POST /api/public/v2/locations HTTP/1.1
@@ -35,7 +35,7 @@ curl -X POST \
 }'
 ```
 
-This endpoint creates a new location.
+This endpoint creates a new Location.
 
 ### HTTP Request
 
@@ -46,6 +46,7 @@ This endpoint creates a new location.
 Parameter      | Required | Default | Description
 ---------      | -------- | ------- | -----------
 name           | ✓        |         | Location's name
-time_zone      | ✓        |         | Time zone string for the location (e.g. "America/New_York")
-external_name  | ✗        |         | An ID by which an API wishes to identify a Location
+time_zone      | ✓        |         | Time zone string for the Location (e.g. "America/New_York")
+external_name  | ✗        |         | An identifier for a Location
+api_id         | ✗        |         | A unique ID for identifying a Location
 week_starts_on | ✗        | 0       | A value from 0 to 6 indicating which day of the week the calendar should start on. 0 = Sunday, 1 = Monday, ..., 6 = Saturday

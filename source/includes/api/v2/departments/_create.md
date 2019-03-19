@@ -1,4 +1,4 @@
-## Create a department
+## Create a Department
 
 ```http
 POST /api/public/v2/departments HTTP/1.1
@@ -15,7 +15,7 @@ Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c
     "attributes": {
       "name": "IT Dept.",
       "location_id": 222,
-      "external_id": "ITD-002"
+      "api_id": "D-222"
     }
   }
 }
@@ -31,13 +31,13 @@ curl -X POST \
     "attributes": {
       "name": "IT Dept.",
       "location_id": 222,
-      "external_id": "ITD-002"
+      "api_id": "D-222"
     }
   }
 }'
 ```
 
-This endpoint creates a new department.
+This endpoint creates a new Department.
 
 ### HTTP Request
 
@@ -49,4 +49,5 @@ Parameter          | Required | Default     | Description
 ---------          | -------- | -------     | -----------
 name               | ✓        |             | Department's name
 location_id        | ✓        |             | Location to which the Department belongs
-external_id        | ✗        |             | An ID by which an API wishes to identify a Department
+external_id        | ✗        |             | An identifier for a Department
+api_id             | ✗        |             | A unique ID for identifying a Department

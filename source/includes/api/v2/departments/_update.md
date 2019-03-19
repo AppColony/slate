@@ -1,4 +1,4 @@
-## Update a department by ID
+## Update a Department by ID
 
 ```http
 PUT /api/public/v2/departments/222 HTTP/1.1
@@ -33,7 +33,7 @@ curl -X PUT \
 }'
 ```
 
-This endpoint updates a department with a given ID.
+This endpoint updates a Department with a given ID.
 
 ### HTTP Request
 
@@ -44,4 +44,5 @@ This endpoint updates a department with a given ID.
 Parameter   | Description
 ---------   | -----------
 name        | Department's name
-external_id | An ID by which an API wishes to identify a Department
+external_id | An identifier for a Department
+api_id      | A unique ID for identifying a Department

@@ -1,4 +1,4 @@
-## Get a location listing
+## Get a Location listing
 
 ```http
 GET /api/public/v2/locations HTTP/1.1
@@ -22,6 +22,7 @@ curl -X GET \
           "name": "Victoria",
           "time_zone": "America/Los_Angeles",
           "external_name": null,
+          "api_id": null,
           "week_starts_on": 0
       },
       "relationships": {
@@ -42,6 +43,7 @@ curl -X GET \
         "name": "Calgary",
         "time_zone": "America/Denver",
         "external_name": null,
+        "api_id": null,
         "week_starts_on": 0
       },
       "relationships": {
@@ -65,7 +67,7 @@ curl -X GET \
 }
 ```
 
-Get a listing of locations for a company.
+Get a listing of Locations for a company.
 
 ### HTTP Request
 
@@ -83,9 +85,10 @@ sort | None | Sorting parameters. Example: `?sort=-name,id` (Reference: <a href=
 
 Property | Example | Notes
 -------- | ------- | -----
-external_name | `?filter[location][external_name]=G3XC900001` | A foreign key to identify locations across systems
+api_id | `?filter[location][api_id]=L-700` | A foreign key to identify Locations across systems
+external_name | `?filter[location][external_name]=G3XC900001` | An identifier for a Location
 name | `?filter[location][name]=makeshift` | Location name
-updated_at | `?filter[location][updated_at](ge)=2018-10-03` | Find locations that have been updated since a certain date (ISO8601 format)
+updated_at | `?filter[location][updated_at](ge)=2018-10-03` | Find Locations that have been updated since a certain date (ISO8601 format)
 
 ### Sortable Properties
 

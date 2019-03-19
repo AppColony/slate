@@ -1,4 +1,4 @@
-## Get a job site by ID
+## Get a Job Site by ID
 
 ```http
 GET /api/public/v2/job_sites/444 HTTP/1.1
@@ -21,12 +21,13 @@ curl -X GET \
             "department_id": 548,
             "name": "East Site 0001",
             "external_id": null
+            "api_id": null
         }
     }
 }
 ```
 
-This endpoint retrieves the data for a single job site.
+This endpoint retrieves the data for a single Job Site.
 
 ### HTTP Request
 

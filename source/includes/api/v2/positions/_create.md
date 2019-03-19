@@ -1,4 +1,4 @@
-## Create a position
+## Create a Position
 
 ```http
 POST /api/public/v2/positions HTTP/1.1
@@ -35,7 +35,7 @@ curl -X POST \
 }'
 ```
 
-This endpoint creates a new position.
+This endpoint creates a new Position.
 
 ### HTTP Request
 
@@ -47,4 +47,5 @@ Parameter     | Required | Default | Description
 ---------     | -------- | ------- | -----------
 name          | ✓        |         | Position's name
 department_id | ✓        |         | Department to which the Position belongs
-external_name | ✗        |         | An ID by which an API wishes to identify a Position
+api_id        | ✗        |         | A unique ID for identifying a Position.
+external_name | ✗        |         | An identifier for a Position.

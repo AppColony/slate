@@ -1,4 +1,4 @@
-## Create a user
+## Create a User
 
 ```http
 POST /api/public/v2/users HTTP/1.1
@@ -35,7 +35,7 @@ curl -X POST \
 }'
 ```
 
-This endpoint creates a new user.
+This endpoint creates a new User.
 
 ### HTTP Request
 
@@ -51,7 +51,7 @@ middle_name        | ✗        |             | User's middle name
 email              | ✗        |             | User's email address
 employee_id        | ✗        | random      | Used for clocking in and out
 phone_number       | ✗        |             | User's phone number
-hire_date          | ✗        |             | Date the user was hired
+hire_date          | ✗        |             | Date the User was hired
 employment_type    | ✗        | "full_time" | "full_time", "part_time", or "casual"
 role               | ✗        | "employee"  | "employee", "department_admin", "location_admin", or "company_admin"
-external_id        | ✗        |             | An ID by which an API wishes to identify a User
+api_id             | ✗        | null        | A unique ID for identifying a User

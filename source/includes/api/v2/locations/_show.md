@@ -1,6 +1,6 @@
-## Get a location by ID
+## Get a Location by ID
 
-This endpoint retrieves the data for a single location.
+This endpoint retrieves the data for a single Location.
 
 ### HTTP Request
 
@@ -27,6 +27,7 @@ curl -X GET \
         "name": "Victoria",
         "time_zone": "America/Los_Angeles",
         "external_name": null,
+        "api_id": null,
         "week_starts_on": 0
     },
     "relationships": {

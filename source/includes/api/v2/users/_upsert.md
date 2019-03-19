@@ -1,4 +1,4 @@
-## Upsert a user
+## Upsert a User
 
 ```http
 PATCH /api/public/v2/users HTTP/1.1
@@ -13,7 +13,7 @@ Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c
   "data": {
     "type": "user",
     "attributes": {
-      "external_id": "lawyer1",
+      "api_id": "lawyer1",
       "first_name": "Atticus",
       "last_name": "Finch"
     }
@@ -29,7 +29,7 @@ curl -X PATCH \
   "data": {
     "type": "user",
     "attributes": {
-      "external_id": "lawyer1",
+      "api_id": "lawyer1",
       "first_name": "Atticus",
       "last_name": "Finch"
     }
@@ -37,7 +37,7 @@ curl -X PATCH \
 }'
 ```
 
-This endpoint will update a user with a given external ID, or create them if they don't exist.
+This endpoint will update a User with a given API ID, or create them if they don't exist.
 
 ### HTTP Request
 
@@ -47,9 +47,9 @@ This endpoint will update a user with a given external ID, or create them if the
 
 Parameter          | Required | Description
 ---------          | -------- | -----------
-external_id        | ✓        | An ID by which an API wishes to identify a User
-first_name         | ✓        | User's first name
-last_name          | ✓        | User's last name
+api_id             | ✓        | A unique ID for identifying a User
+first_name         | Create Only  | User's first name
+last_name          | Create Only  | User's last name
 middle_name        | ✗        | User's middle name
 email              | ✗        | User's email address
 employee_id        | ✗        | Used for clocking in and out

@@ -1,4 +1,4 @@
-## Get a shift by ID
+## Get a Shift by ID
 
 ```http
 GET /api/public/v2/shifts/135000 HTTP/1.1
@@ -77,7 +77,7 @@ curl -X GET \
 }
 ```
 
-This endpoint retrieves the data for a single shift.
+This endpoint retrieves the data for a single Shift.
 
 ### HTTP Request
 

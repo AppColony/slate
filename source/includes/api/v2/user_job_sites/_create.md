@@ -1,4 +1,4 @@
-## Associate a user with a job site
+## Associate a User with a Job Site
 
 ```http
 POST /api/public/v2/user_job_sites HTTP/1.1
@@ -35,7 +35,7 @@ curl -X POST \
 }'
 ```
 
-This endpoint creates an association between a user and a job site.
+This endpoint creates an association between a User and a Job Site.
 
 ### HTTP Request
 
@@ -45,5 +45,5 @@ This endpoint creates an association between a user and a job site.
 
 Parameter   | Required | Default | Description
 ---------   | -------- | ------- | -----------
-user_id     | ✓        |         | User ID to associate with a job site
-job_site_id | ✓        |         | Job Site ID to associate user with
+user_id     | ✓        |         | User ID to associate with a Job Site
+job_site_id | ✓        |         | Job Site ID to associate with a User
