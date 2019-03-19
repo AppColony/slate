@@ -8,14 +8,6 @@ Host: app.makeshift.ca
 Authorization: Bearer <token>
 ```
 
-> Sort users by "employee_id` (descending)
-
-```http
-GET /public/v2/users?sort=-employee_id HTTP/1.1
-Host: app.makeshift.ca
-Authorization: Bearer <token>
-```
-
 Most endpoints that return multiple objects can be sorted by certain properties listed in that endpoint's documentation.
 
 An example of sorting a list of users by `employee_id`:
