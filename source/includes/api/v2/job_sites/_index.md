@@ -1,4 +1,4 @@
-## Get a listing of job sites
+## Get a listing of Job Sites
 
 ```http
 GET /api/public/v2/job_sites HTTP/1.1
@@ -35,7 +35,7 @@ curl -X GET \
 ```
 
 
-Get a listing of job sites for a company.
+Get a listing of Job Sites for a company.
 
 ### HTTP Request
 
@@ -55,7 +55,7 @@ Property | Example | Notes
 -------- | ------- | -----
 api_id   | `?filter[job_site][api_id]=J-200` | A unique ID for identifying a Job Site.
 external_id | `?filter[job_site][external_name]=G3XC900001` | An identifier for a Job Site.
-name | `?filter[job_site][name]=makeshift` | Job site name
+name | `?filter[job_site][name]=makeshift` | Job Site name
 department_id | `?filter[job_site][department_id]=makeshift` | Department ID
 
 ### Sortable Properties

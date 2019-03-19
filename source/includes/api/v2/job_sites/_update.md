@@ -1,4 +1,4 @@
-## Update a job site by ID
+## Update a Job Site by ID
 
 ```http
 PUT /api/public/v2/job_sites/123 HTTP/1.1
@@ -33,7 +33,7 @@ curl -X PUT \
 }'
 ```
 
-This endpoint updates a job site with a given ID.
+This endpoint updates a Job Site with a given ID.
 
 ### HTTP Request
 

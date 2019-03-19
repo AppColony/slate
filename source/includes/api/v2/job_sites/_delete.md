@@ -13,7 +13,7 @@ curl -X DELETE \
 }'
 ```
 
-This endpoint will delete a job site by Job Site ID.
+This endpoint will delete a Job Site by its ID.
 
 ### HTTP Request
 

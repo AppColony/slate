@@ -37,7 +37,7 @@ curl -X PATCH \
 }'
 ```
 
-This endpoint will update a job site with a given API ID, or create one if it doesn't exist.
+This endpoint will update a Job Site with a given API ID, or create one if it doesn't exist.
 
 ### HTTP Request
 

@@ -1,4 +1,4 @@
-## Create a position
+## Create a Position
 
 ```http
 POST /api/public/v2/positions HTTP/1.1
@@ -35,7 +35,7 @@ curl -X POST \
 }'
 ```
 
-This endpoint creates a new position.
+This endpoint creates a new Position.
 
 ### HTTP Request
 

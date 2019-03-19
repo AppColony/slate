@@ -1,4 +1,4 @@
-## Create a job site
+## Create a Job Site
 
 ```http
 POST /api/public/v2/job_sites HTTP/1.1
@@ -35,7 +35,7 @@ curl -X POST \
 }'
 ```
 
-This endpoint creates a new job site.
+This endpoint creates a new Job Site.
 
 ### HTTP Request
 

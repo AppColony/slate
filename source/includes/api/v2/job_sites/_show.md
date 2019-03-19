@@ -1,4 +1,4 @@
-## Get a job site by ID
+## Get a Job Site by ID
 
 ```http
 GET /api/public/v2/job_sites/444 HTTP/1.1
@@ -27,7 +27,7 @@ curl -X GET \
 }
 ```
 
-This endpoint retrieves the data for a single job site.
+This endpoint retrieves the data for a single Job Site.
 
 ### HTTP Request
 
