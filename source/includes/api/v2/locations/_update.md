@@ -1,4 +1,4 @@
-## Update a location by ID
+## Update a Location by ID
 
 ```http
 PUT /api/public/v2/locations/222 HTTP/1.1
@@ -33,7 +33,7 @@ curl -X PUT \
 }'
 ```
 
-This endpoint updates a location with a given ID.
+This endpoint updates a Location with a given ID.
 
 ### HTTP Request
 
@@ -44,4 +44,5 @@ This endpoint updates a location with a given ID.
 Parameter     | Description
 ---------     | -----------
 name          | Location's name
-external_name | An ID by which an API wishes to identify a Location
+api_id        | A unique ID for identifying a Location
+external_name | An identifier for a Location

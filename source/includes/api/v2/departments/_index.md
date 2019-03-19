@@ -1,4 +1,4 @@
-## Get a department listing
+## Get a Department listing
 
 ```http
 GET /api/public/v2/departments HTTP/1.1
@@ -24,6 +24,7 @@ curl -X GET \
           "name": "Kitchen",
           "location_id": 111,
           "external_id": "001",
+          "api_id": "D-222",
           "last_published_at": "2019-01-29 23:51:09 UTC",
           "updated_at": "2019-01-29 23:51:09 UTC"
         },
@@ -64,7 +65,7 @@ curl -X GET \
 }
 ```
 
-Get a listing of departments for a company.
+Get a listing of Departments for a company.
 
 ### HTTP Request
 
@@ -82,10 +83,11 @@ sort | None | Sorting parameters. Example: `?sort=-name,id` (Reference: <a href=
 
 Property | Example | Notes
 -------- | ------- | -----
-external_id | `?filter[department][external_name]=G3XC900001` | A foreign key to identify departments across systems
+api_id | `?filter[department][api_id]=G3XC900001` | A unique ID for identifying Departments across systems
+external_id | `?filter[department][external_name]=G3XC900001` | A Department identifier
 name | `?filter[department][name]=makeshift` | Department name
 location_id | `?filter[department][location_id]=makeshift` | Location ID
-updated_at | `?filter[department][updated_at](ge)=2018-10-03` | Find departments that have been updated since a certain date (ISO8601 format)
+updated_at | `?filter[department][updated_at](ge)=2018-10-03` | Find Departments that have been updated since a certain date (ISO8601 format)
 
 ### Sortable Properties
 

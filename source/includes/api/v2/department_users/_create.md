@@ -1,4 +1,4 @@
-## Associate a user with a department
+## Associate a User with a Department
 
 ```http
 POST /api/public/v2/department_users HTTP/1.1
@@ -35,7 +35,7 @@ curl -X POST \
 }'
 ```
 
-This endpoint creates an association between a user and a department.
+This endpoint creates an association between a User and a Department.
 
 ### HTTP Request
 

@@ -9,18 +9,24 @@
 
   thead {
     border-top: 1px solid #ccc;
-    background: white; 
+    background: white;
   }
 
   th:first-child {
-    padding-left: 28px; 
+    padding-left: 28px;
   }
 
   td:first-child {
-    padding-left: 28px; 
+    padding-left: 28px;
   }
 }
 
 code {
   white-space: pre-wrap;
+}
+
+.toc-list-h1 > li:nth-child(4) {
+  padding-bottom: 0.6em;
+  margin-bottom: 0.6em;
+  border-bottom: 1px dashed #666;
 }

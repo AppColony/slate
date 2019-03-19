@@ -1,4 +1,4 @@
-## Create a job site
+## Create a Job Site
 
 ```http
 POST /api/public/v2/job_sites HTTP/1.1
@@ -35,7 +35,7 @@ curl -X POST \
 }'
 ```
 
-This endpoint creates a new job site.
+This endpoint creates a new Job Site.
 
 ### HTTP Request
 
@@ -47,4 +47,5 @@ Parameter          | Required | Default     | Description
 ---------          | -------- | -------     | -----------
 name               | ✓        |             | Job Site's name
 department_id      | ✓        |             | Department to which the Job Site belongs
-external_id        | ✗        |             | An ID by which an API wishes to identify a Job Site
+api_id             | ✗        |             | A unique ID for identifying a Job Site
+external_id        | ✗        |             | An identifier a Job Site
