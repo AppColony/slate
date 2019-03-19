@@ -11,6 +11,9 @@ toc_footers:
 
 includes:
   - api/authentication
+  - api/pagination
+  - api/sorting
+  - api/error_codes
   - api/v2/users
   - api/v2/users/show
   - api/v2/users/index
@@ -52,9 +55,6 @@ includes:
   - api/v2/shifts
   - api/v2/shifts/show
   - api/v2/shifts/index
-  - api/pagination
-  - api/sorting
-  - api/error_codes
 
 search: true
 ---
