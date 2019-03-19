@@ -1,4 +1,4 @@
-# Associate a User with a Position
+## Associate a User with a Position
 
 ```http
 POST /api/public/v2/user_positions HTTP/1.1
