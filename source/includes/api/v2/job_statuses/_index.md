@@ -48,3 +48,26 @@ TODO: Description
 ### HTTP Request
 
 `GET /api/public/v2/job_statuses`
+
+### Request Parameters
+
+Parameter | Default | Description
+--------- | ------- | -----------
+fields | All | A comma-separated list of fields to select. Example: `?fields[job_status]=state`
+page | Page 1, Size 100 | Pagination parameters. Example: `?page[number]=1&page[size]=100` (Reference: <a href='#pagination'>Pagination</a>)
+sort | None | Sorting parameters. Example: `?sort=created_at` (Reference: <a href='#sorting'>Sorting</a>)
+
+### Filterable Properties
+
+Property | Example | Notes
+-------- | ------- | -----
+api_id | `?filter[job_status][state]=running` | The state of the job (queued, running, completed, failed)
+created_at | `?filter[job_status][created_at](ge)=2018-10-03` | Find jobs that have been created since a certain date/time (ISO8601 format)
+
+### Sortable Properties
+
+Property | Example
+-------- | -------
+created_at | `users?sort=created_at`
+
+Reference: <a href='#sorting'>Sorting</a>
