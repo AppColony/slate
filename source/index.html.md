@@ -20,6 +20,7 @@ includes:
   - api/v2/users/create
   - api/v2/users/update
   - api/v2/users/upsert
+  - api/v2/users/archive
   - api/v2/locations
   - api/v2/locations/show
   - api/v2/locations/index
