@@ -12,7 +12,7 @@ curl -X DELETE \
   -H 'Authorization: Bearer <token>' \
 ```
 
-This endpoint will archive a user. In MakeShift, archiving a user is essentially "deleting" a user. The user is put away and be unarchived in the future. **NOTE:** Archiving a user removes all future scheduled shifts, closed pending exchanges and bis on available shifts. This is a destructive operation.
+This endpoint will archive a user. In MakeShift, archiving a user is essentially "deleting" a user. The user is put away and can be unarchived in the future. **NOTE:** Archiving a user removes all future scheduled shifts, closes pending exchanges and bids on available shifts. This is a destructive operation.
 
 
 ### HTTP Request

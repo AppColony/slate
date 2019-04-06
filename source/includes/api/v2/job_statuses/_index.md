@@ -68,6 +68,6 @@ created_at | `?filter[job_status][created_at](ge)=2018-10-03` | Find jobs that h
 
 Property | Example
 -------- | -------
-created_at | `users?sort=created_at`
+created_at | `job_statuses?sort=created_at`
 
 Reference: <a href='#sorting'>Sorting</a>
