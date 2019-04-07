@@ -14,6 +14,7 @@ includes:
   - api/pagination
   - api/sorting
   - api/error_codes
+  - api/async_endpoints
   - api/v2/users
   - api/v2/users/show
   - api/v2/users/index

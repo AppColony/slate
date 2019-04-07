@@ -43,7 +43,7 @@ curl -X GET \
 }
 ```
 
-TODO: Description
+Returns a list of JobStatuses. **NOTE:** JobStatuses with the state "completed" are deleted after 7 days.
 
 ### HTTP Request
 
