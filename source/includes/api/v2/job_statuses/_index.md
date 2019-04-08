@@ -62,6 +62,7 @@ sort | None | Sorting parameters. Example: `?sort=created_at` (Reference: <a hre
 Property | Example | Notes
 -------- | ------- | -----
 state | `?filter[job_status][state]=running` | The state of the job (queued, running, completed, failed)
+job_name | `?filter[job_status][job_name]=user_archive` | The name of the job. This will be a string which represents the operation (ex: `user_archive`)  
 created_at | `?filter[job_status][created_at](ge)=2018-10-03` | Find jobs that have been created since a certain date/time (ISO8601 format)
 
 ### Sortable Properties
