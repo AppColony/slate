@@ -28,6 +28,7 @@ includes:
   - api/v2/locations/create
   - api/v2/locations/update
   - api/v2/locations/upsert
+  - api/v2/locations/delete
   - api/v2/locations/time_zones
   - api/v2/departments
   - api/v2/departments/show
@@ -35,8 +36,10 @@ includes:
   - api/v2/departments/create
   - api/v2/departments/update
   - api/v2/departments/upsert
+  - api/v2/departments/delete
   - api/v2/department_users
   - api/v2/department_users/create
+  - api/v2/department_users/delete
   - api/v2/positions
   - api/v2/positions/show
   - api/v2/positions/index

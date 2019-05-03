@@ -29,7 +29,7 @@ curl -X POST \
     "type": "department_user",
     "attributes": {
       "user_id": 7442,
-      "department_id": 12,
+      "department_id": 12
     }
   }
 }'
