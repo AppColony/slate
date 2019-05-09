@@ -9,8 +9,7 @@ Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c
 ```shell
 curl -X DELETE \
   https://app.makeshift.ca/api/public/v2/positions/:id \
-  -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b' \
-}'
+  -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b'
 ```
 
 This endpoint will delete a position by Position ID.

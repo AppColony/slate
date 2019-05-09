@@ -46,18 +46,22 @@ includes:
   - api/v2/positions/create
   - api/v2/positions/update
   - api/v2/positions/upsert
+  - api/v2/positions/delete
   - api/v2/user_positions
   - api/v2/user_positions/index
   - api/v2/user_positions/create
+  - api/v2/user_positions/delete
   - api/v2/job_sites
   - api/v2/job_sites/show
   - api/v2/job_sites/index
   - api/v2/job_sites/create
   - api/v2/job_sites/update
   - api/v2/job_sites/upsert
+  - api/v2/job_sites/delete
   - api/v2/user_job_sites
   - api/v2/user_job_sites/index
   - api/v2/user_job_sites/create
+  - api/v2/user_job_sites/delete
   - api/v2/shifts
   - api/v2/shifts/show
   - api/v2/shifts/index
