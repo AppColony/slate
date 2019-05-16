@@ -1,29 +1,31 @@
-## Disassociate a User from a Job Site
+## Disassociate a User from a Department
 
 ```http
-DELETE /api/public/v2/users/7345/job_sites/7 HTTP/1.1
+DELETE /api/public/v2/departments/548/users/7345 HTTP/1.1
 Host: app.makeshift.ca
 Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b
 ```
 
+
 ```shell
 curl -X DELETE \
-  https://app.makeshift.ca/api/public/v2/users/7345/job_sites/7 \
+  https://app.makeshift.ca/api/public/v2/departments/548/users/7345 \
   -H 'Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b'
 ```
 
-This endpoint will delete a User Job Site.
+
+This endpoint deletes an association between a User and a Department.
 
 ### HTTP Request
 
-`DELETE /api/public/v2/users/:user_id/job_sites/:job_site_id`
+`DELETE /api/public/v2/departments/<department_id>/users/<user_id>`
 
 ### HTTP Response Codes
 
 Status | Meaning
 ---------- | -------
 202 | Accepted. The request is successful yet deferred. A job has been queued.
-404 | Cannot find User Job Site to disassociate. This could mean an incorrect ID or that it's already been disassociated. 
+404 | Cannot find Department User to disassociate. This could mean an incorrect ID or that it's already been disassociated. 
 
 ### Asynchronous Operation
   
