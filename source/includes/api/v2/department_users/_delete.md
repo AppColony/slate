@@ -19,3 +19,14 @@ This endpoint deletes an association between a User and a Department.
 ### HTTP Request
 
 `DELETE /api/public/v2/departments/<department_id>/users/<user_id>`
+
+### HTTP Response Codes
+
+Status | Meaning
+---------- | -------
+202 | Accepted. The request is successful yet deferred. A job has been queued.
+404 | Cannot find Department User to disassociate. This could mean an incorrect ID or that it's already been disassociated. 
+
+### Asynchronous Operation
+  
+Please note this is an async operation, a successful call will return a 202 with a JSON body containing async job info.  Read more about [Asynchronous Operations](#asynchronous-endpoints).

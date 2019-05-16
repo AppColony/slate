@@ -16,4 +16,15 @@ This endpoint will delete a Job Site by its ID.
 
 ### HTTP Request
 
-`DELETE /api/public/v2/job_sites/:id`
+`DELETE /api/public/v2/job_sites/:id` 
+
+### HTTP Response Codes
+
+Status | Meaning
+---------- | -------
+202 | Accepted. The request is successful yet deferred. A job has been queued.
+404 | Cannot find Job Site to delete. This could mean an incorrect ID or that it's already been deleted.
+
+### Asynchronous Operation
+  
+Please note this is an async operation, a successful call will return a 202 with a JSON body containing async job info.  Read more about [Asynchronous Operations](#asynchronous-endpoints).

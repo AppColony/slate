@@ -23,9 +23,9 @@ This endpoint deletes an existing Location.
 
 Status | Meaning
 ---------- | -------
-202 | Accepted. The request is successful yet deferred. A job has been queued to delete this location.
-404 | Cannot find location to delete. This could mean an incorrect ID or that this location was already deleted. 
+202 | Accepted. The request is successful yet deferred. A job has been queued.
+404 | Cannot find location to delete. This could mean an incorrect ID or that it's already been deleted.
 
 ### Asynchronous Operation
-
-Please note that deleting a location is an asynchronous operation. A successful call to this endpoint will return an HTTP status code of "202 — Accepted" and a JSON body containing information about the asynchronous job that was queued. Getting a 202 response does not guarantee that this location was successfully deleted (although it will very likely succeed). 
+  
+Please note this is an async operation, a successful call will return a 202 with a JSON body containing async job info.  Read more about [Asynchronous Operations](#asynchronous-endpoints).
