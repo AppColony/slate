@@ -119,6 +119,6 @@ position_id | `shifts?sort=position_id`
 date | `shifts?sort=date`
 starts_at | `shifts?sort=starts_at`
 ends_at | `shifts?sort=ends_at`
-update_at | `shifts?sort=updated_at`
+updated_at | `shifts?sort=updated_at`
 
 Reference: <a href='#sorting'>Sorting</a>

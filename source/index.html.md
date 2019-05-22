@@ -65,6 +65,8 @@ includes:
   - api/v2/shifts
   - api/v2/shifts/show
   - api/v2/shifts/index
+  - api/v2/deleted_shifts
+  - api/v2/deleted_shifts/index
   - api/v2/job_statuses
   - api/v2/job_statuses/index
   - api/v2/job_statuses/show
