@@ -15,6 +15,36 @@ curl -X GET \
 > The above command returns JSON structured like this:
 
 ```json
+{
+  "data": [
+    {
+      "id": "1",
+      "type": "deleted_shift",
+      "attributes": {
+        "shift_id": 135022,
+        "department_id": 555,
+        "user_id": 7346,
+        "date": "2019-05-23",
+        "starts_at": "2019-05-23T10:30:00.000Z",
+        "ends_at": "2019-05-23T18:30:00.000Z",
+        "time_zone": "America/Denver",
+        "breaks": "[]",
+        "notes": null,
+        "published_at": "2019-05-17T20:56:22.199Z",
+        "updated_at": "2019-05-17T20:56:07.249Z",
+        "deleted_at": "2019-05-22T22:56:38.671Z",
+        "job_site_id": null,
+        "position_id": 330
+      }
+    }
+  ],
+  "meta": {
+    "shown": 1
+  },
+  "links": {
+    "self": "https://app.makeshift.ca/api/public/v2/deleted_shifts?page%5Bnumber%5D=1&page%5Bsize%5D=100"
+  }
+}
 ```
 
 Get a listing of deleted Shifts for a company.
