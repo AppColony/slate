@@ -11,6 +11,7 @@ toc_footers:
 
 includes:
   - api/authentication
+  - api/rate_limiting
   - api/pagination
   - api/sorting
   - api/error_codes
