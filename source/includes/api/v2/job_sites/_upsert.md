@@ -52,5 +52,7 @@ external_id        |  ○        | ○            | An identifier for a Job Site
 name               |  ✓        | ○            | Job Site's name
 department_id      |  ✓        | ✗            | Department to which the Job Site belongs
 
-✓ = Required &nbsp; ○ = Optional &nbsp; ✗ = Ignored
+✓ = Required &nbsp; ○ = Optional &nbsp; ✗ = Cannot be changed
+
+Properties such as `department_id` are required for creation but cannot be changed during an update. An UPSERT will allow passing the **same** value for `department_id` but result in an HTTP 422 if the value has changed.
 
