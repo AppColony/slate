@@ -54,5 +54,5 @@ week_starts_on     |  ○        | ✗            | A value from 0 to 6 indicati
 
 ✓ = Required &nbsp; ○ = Optional &nbsp; ✗ = Cannot be changed
 
-Properties such as `time_zone` are required for creation but cannot be changed during an update. An UPSERT will allow passing the **same** value for `time_zone` but result in an HTTP 422 if the value is changed.
+Properties such as `time_zone` are required for creation but cannot be changed during an update. An UPSERT will allow passing the **same** value for `time_zone` but result in an HTTP 422 if the value has changed.
 
