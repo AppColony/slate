@@ -52,5 +52,7 @@ name               |  ✓        | ○            | Location's name
 time_zone          |  ✓        | ✗            | Location's time zone
 week_starts_on     |  ○        | ✗            | A value from 0 to 6 indicating which day of the week the calendar
 
-✓ = Required &nbsp; ○ = Optional &nbsp; ✗ = Ignored
+✓ = Required &nbsp; ○ = Optional &nbsp; ✗ = Cannot be changed
+
+Properties such as `time_zone` are required for creation but cannot be changed during an update. An UPSERT will allow passing the **same** value for `time_zone` but result in an HTTP 422 if the value is changed.
 
