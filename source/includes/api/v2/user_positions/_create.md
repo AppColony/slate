@@ -14,7 +14,8 @@ Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c
     "type": "user_position",
     "attributes": {
       "user_id": 7442,
-      "position_id": 22
+      "position_id": 22,
+      "wage": 15.25
     }
   }
 }
@@ -29,7 +30,8 @@ curl -X POST \
     "type": "user_position",
     "attributes": {
       "user_id": 7442,
-      "position_id": 22
+      "position_id": 22,
+      "wage": 15.25
     }
   }
 }'
@@ -47,3 +49,4 @@ Parameter   | Required | Default | Description
 ---------   | -------- | ------- | -----------
 user_id     | ✓        |         | User ID to associate with a Position
 position_id | ✓        |         | Position ID to associate with a User
+wage        |          | `null`  | Optional wage for this User in this Position. Default of `null` will use the User's base hourly wage when they are working in this Position. The value should be rounded to two decimal places. Example: `10.85`
