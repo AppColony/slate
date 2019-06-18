@@ -16,15 +16,15 @@ This endpoint will delete a user position.
 
 ### HTTP Request
 
-`DELETE /api/public/v2/users/:user_id/positions/:position_id`
+`DELETE /api/public/v2/users/<user_id>/positions/<position_id>`
 
 ### HTTP Response Codes
 
 Status | Meaning
 ---------- | -------
 202 | Accepted. The request is successful yet deferred. A job has been queued.
-404 | Cannot find User Position to disassociate. This could mean an incorrect ID or that it's already been disassociated. 
+404 | Cannot find User Position to disassociate. This could mean an incorrect ID or that it's already been disassociated.
 
 ### Asynchronous Operation
-  
+
 Please note this is an async operation, a successful call will return a 202 with a JSON body containing async job info.  Read more about [Asynchronous Operations](#asynchronous-endpoints).
