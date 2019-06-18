@@ -52,6 +52,7 @@ includes:
   - api/v2/user_positions
   - api/v2/user_positions/index
   - api/v2/user_positions/create
+  - api/v2/user_positions/update
   - api/v2/user_positions/delete
   - api/v2/job_sites
   - api/v2/job_sites/show
