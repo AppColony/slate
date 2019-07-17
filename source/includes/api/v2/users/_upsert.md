@@ -54,6 +54,6 @@ middle_name        | ✗        | User's middle name
 email              | ✗        | User's email address
 employee_id        | ✗        | Used for clocking in and out
 phone_number       | ✗        | User's phone number
-hire_date          | ✗        | Date the user was hired
+hire_date          | ✗        | Date the user was hired (ISO8601 ex: '2019-07-17')
 employment_type    | ✗        | "full_time", "part_time", or "casual"
 role               | ✗        | "employee", "department_admin", "location_admin", or "company_admin"
