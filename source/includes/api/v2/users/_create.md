@@ -51,7 +51,7 @@ middle_name        | ✗        |             | User's middle name
 email              | ✗        |             | User's email address
 employee_id        | ✗        | random      | Used for clocking in and out
 phone_number       | ✗        |             | User's phone number
-hire_date          | ✗        |             | Date the User was hired
+hire_date          | ✗        |             | Date the User was hired (ISO8601 ex: '2019-07-17')
 employment_type    | ✗        | "full_time" | "full_time", "part_time", or "casual"
 role               | ✗        | "employee"  | "employee", "department_admin", "location_admin", or "company_admin"
 api_id             | ✗        | null        | A unique ID for identifying a User
