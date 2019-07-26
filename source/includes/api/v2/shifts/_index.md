@@ -104,8 +104,8 @@ date | `?filter[shift][date](eq)='2018-12-11'` | The start date of a shift (ISO8
 starts_at | `?filter[shift][starts_at](ge)='2018-09-28 01:00:00 UTC'` | The start time of a Shift
 ends_at | `?filter[shift][ends_at](ge)='2018-09-29 04:30:00 UTC'` | The end time of a Shift
 updated_at | `?filter[shift][updated_at](ge)=2018-10-03` | Find Shifts that have been updated since a certain date (ISO8601 format)
-published_at | `?filter[shift][updated_at](ge)=2018-10-03` | Find Shifts that have been pulished since a certain date (ISO8601 format)
-published | `?filter[shift][updated_at](ge)=true` | Find Shifts that have been published
+published_at | `?filter[shift][published_at](ge)=2018-10-03` | Find Shifts that have been pulished since a certain date (ISO8601 format)
+published | `?filter[shift][published](ge)=true` | Find Shifts that have been published
 
 ### Sortable Properties
 
