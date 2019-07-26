@@ -105,7 +105,7 @@ starts_at | `?filter[shift][starts_at](ge)='2018-09-28 01:00:00 UTC'` | The star
 ends_at | `?filter[shift][ends_at](ge)='2018-09-29 04:30:00 UTC'` | The end time of a Shift
 updated_at | `?filter[shift][updated_at](ge)=2018-10-03` | Find Shifts that have been updated since a certain date (ISO8601 format)
 published_at | `?filter[shift][published_at](ge)=2018-10-03` | Find Shifts that have been published since a certain date (ISO8601 format)
-published | `?filter[shift][published](ge)=true` | Find Shifts that have been published
+published | `?filter[shift][published]=true` | Find Shifts that have been published
 
 ### Sortable Properties
 
