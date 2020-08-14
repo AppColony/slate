@@ -38,6 +38,20 @@ curl --X POST 'http://localhost:3000/api/public/v2/shifts' \
 }'
 ```
 
+> Error examples:
+
+```json
+{
+  "errors": [
+    {
+      "title": "Conflict error",
+      "detail": "Cannot create a shift on 2019-01-01 due to a conflict with Adam Millroy’s schedule.",
+      "status": "400"
+    }
+  ]
+}
+```
+
 This endpoint creates a new Shift. 
 
 ### HTTP Request
@@ -56,6 +70,6 @@ external_id        | ✗        |             |
 job_site_id        | ✗        |             |
 notes              | ✗        |             |
 position_id        | ✗        |             |
-published_at       | ✗        |             |
+published          | ✗        |             | Set to `true` to have shift published immediately
 breaks             | ✗        |             |
 
