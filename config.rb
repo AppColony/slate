@@ -58,4 +58,9 @@ set :port, 4567
 
 helpers do
   require './lib/toc_data.rb'
+
+  def wrap_me(tag, &block)
+    captured = capture_html(&block)
+    concat_content "<#{tag}>" + captured + "</#{tag}>"
+  end
 end

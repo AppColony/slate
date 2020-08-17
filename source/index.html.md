@@ -10,7 +10,7 @@ toc_footers:
   - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
 
 includes:
-  - api/authentication
+  - api/authentication.md.erb
   - api/rate_limiting
   - api/pagination
   - api/sorting

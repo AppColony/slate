@@ -1,27 +1,50 @@
 # Authentication
 
-> To authorize using a key and secret, use this code:
 
-```http
-POST /oauth/token HTTP/1.1
-Host: id.makeshift.ca
-Content-Type: application/json
-Cache-Control: no-cache
+A MakeShift API token can be retrieved for any company admin using an API key and secret.
 
-{
-  "grant_type"  : "password",
-  "username"    : "<key>",
-  "password"    : "<secret>"
-}
-```
+<aside class="notice">
+  Note that authentication should happen against MakeShift's central auth system <a href="https://id.makeshift.ca">https://id.makeshift.ca</a>
+</aside>
 
-```shell
-curl --request POST \
-  --url https://id.makeshift.ca/oauth/token \
-  --header 'Cache-Control: no-cache' \
-  --header 'Content-Type: application/json' \
-  --data '{ "grant_type": "password", "username": "<key>", "password": "<secret>" }'
-```
+Use the returned token in API requests using an HTTP `Authorization` header, like so:
+
+
+`Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b`
+
+<% content_tag(:p, "demo", :class => 'light') do %>
+  Hi
+  There
+  Guy
+  **Manjoni**
+<% end %>
+
+<% wrap_me("blink") do %>
+  > To authorize using a key and secret, use this code:
+
+  ```http
+  POST /oauth/token HTTP/1.1
+  Host: id.makeshift.ca
+  Content-Type: application/json
+  Cache-Control: no-cache
+
+  {
+    "grant_type"  : "password",
+    "username"    : "<key>",
+    "password"    : "<secret>"
+  }
+  ```
+
+  ```shell
+  curl --request POST \
+    --url https://id.makeshift.ca/oauth/token \
+    --header 'Cache-Control: no-cache' \
+    --header 'Content-Type: application/json' \
+    --data '{ "grant_type": "password", "username": "<key>", "password": "<secret>" }'
+  ```
+<% end %>
+
+
 
 > Response example:
 
@@ -56,15 +79,6 @@ curl -X GET \
 ```
 
 
-A MakeShift API token can be retrieved for any company admin using an API key and secret.
-
-<aside class="notice">
-  Note that authentication should happen against MakeShift's central auth system <a href="https://id.makeshift.ca">https://id.makeshift.ca</a>
-</aside>
-
-Use the returned token in API requests using an HTTP `Authorization` header, like so:
-
-`Authorization: Bearer c1230734cc726edc6ae0f8fd00b279dc67f34937d7b8fa8fe5b13a232c11a04b`
 
 ## Token Info and Expiration
 
