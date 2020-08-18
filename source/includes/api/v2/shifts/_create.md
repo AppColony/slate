@@ -52,6 +52,18 @@ curl --X POST 'http://localhost:3000/api/public/v2/shifts' \
 }
 ```
 
+```json
+{
+    "errors": [
+        {
+            "title": "Invalid attributes",
+            "detail": "Start time must be less than end time",
+            "status": "422"
+        }
+    ]
+}
+```
+
 This endpoint creates a new Shift. 
 
 ### HTTP Request
