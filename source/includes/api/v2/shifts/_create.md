@@ -78,7 +78,6 @@ user_id            | ✓        |             | The ID of the User this Shift sh
 department_id      | ✓        |             | The ID of the Department this Shift should be created in
 starts_at          | ✓        |             | The start date/time of the Shift
 ends_at            | ✓        |             | The end date/time of the Shift
-external_id        | ✗        |             |
 job_site_id        | ✗        |             |
 notes              | ✗        |             |
 position_id        | ✗        |             |
